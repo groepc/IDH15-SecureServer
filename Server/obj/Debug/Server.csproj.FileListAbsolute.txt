@@ -1,0 +1,6 @@
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\bin\Debug\Server.exe.config
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\bin\Debug\Server.exe
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\bin\Debug\Server.pdb
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\obj\Debug\Server.exe
+C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\Server\obj\Debug\Server.pdb
