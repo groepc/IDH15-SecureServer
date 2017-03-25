@@ -6,9 +6,9 @@ using static System.Net.WebRequestMethods;
 
 namespace Server.request
 {
-    public class RequestHandler
+    public class RequestHandler : TcpClient
     {
-        private TcpListener socket;
+        private TcpClient socket;
         private StreamWriter socket_in;
         private StreamReader socket_out;
 
@@ -16,7 +16,7 @@ namespace Server.request
 
         private String webroot = "C:/webroot";
 
-        public RequestHandler(TcpListener socket)
+        public RequestHandler(TcpClient socket)
         {
             this.socket = socket;
         }
@@ -25,10 +25,8 @@ namespace Server.request
         {
             try
             {
-                TcpClient client = socket.AcceptTcpClient();
-
-                NetworkStream socket_in = client.GetStream();
-                NetworkStream socket_out = client.GetStream();
+                NetworkStream socket_in = socket.GetStream();
+                NetworkStream socket_out = socket.GetStream();
                 var request = new Request(socket_in);
 
                 Myfile myfile = new File(webroot + request.getPath());
