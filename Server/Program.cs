@@ -4,23 +4,25 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Sockets;
 
 namespace Server
 {
     class Program
     {
-        
+
 
         static void Main(string[] args)
         {
             try
             {
-                Server server = new Server(IPAddress, port);
-                server.start();
+                Server server = new Server();
+                server.Start();
             }
             catch (Exception e)
             {
-                System.err.println(e.getMessage());
+                Console.WriteLine("ServerException: {0}", e);
             }
         }
+    }
 }

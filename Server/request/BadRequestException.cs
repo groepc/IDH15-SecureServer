@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Server.request
 {
-    class BadRequestException
+    public class BadRequestException : Exception
     {
-        private String message;
+        private string message;
 
-        BadRequestException(String message)
+        public BadRequestException(string message)
         {
             this.message = message;
         }
 
-        public String getMessage()
+        public string getMessage()
         {
             return message;
         }
