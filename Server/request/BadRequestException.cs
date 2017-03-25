@@ -8,5 +8,17 @@ namespace Server.request
 {
     class BadRequestException
     {
+        private String message;
+
+        BadRequestException(String message)
+        {
+            this.message = message;
+        }
+
+        public String getMessage()
+        {
+            return message;
+        }
+
     }
 }
