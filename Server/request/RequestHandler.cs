@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Server.utils;
+using System;
 using System.IO;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace Server.request
 {
-    public class RequestHandler 
+    public class RequestHandler
     {
         private TcpListener socket;
         private StreamWriter socket_in;
@@ -23,15 +21,17 @@ namespace Server.request
             this.socket = socket;
         }
 
-        public void run()
+        public void Run()
         {
             try
             {
-                NetworkStream socket_in = socket.GetStream(); //socket.getInputStream();
-                NetworkStream socket_out = socket.GetStream();
+                TcpClient client = socket.AcceptTcpClient();
+
+                NetworkStream socket_in = client.GetStream();
+                NetworkStream socket_out = client.GetStream();
                 var request = new Request(socket_in);
 
-                MyFile myfile = new MyFile(webroot + request.getPath());
+                Myfile myfile = new File(webroot + request.getPath());
 
 
                 writeFile(myfile);
@@ -50,5 +50,6 @@ namespace Server.request
                 writeError(500);
             }
         }
+
     }
 }
