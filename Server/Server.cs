@@ -6,48 +6,35 @@ using System.Net.Sockets;
 
 namespace Server
 {
-
-
     public class Server
     {
+        private TcpListener listenSocket;
 
-        static void Main(string[] args)
+        //comment
+        public Server(IPAddress ipadress, int port)
         {
-            TcpListener server = null;
+            listenSocket = new TcpListener(ipadress, port);
+        }
+
+        public void Start()
+        {
             try
             {
-                // Set the TcpListener on port 13000.
-                Int32 port = 13000;
-                IPAddress localAddr = IPAddress.Parse("127.0.0.1");
-
-                // TcpListener server = new TcpListener(port);
-                server = new TcpListener(localAddr, port);
-                RequestHandler handler = new RequestHandler(server);
-                // Start listening for client requests.
-                server.Start();
-
-                // Enter the listening loop.
                 while (true)
                 {
-                    Console.Write("Waiting for a connection... ");
-
-
-
-                    Console.WriteLine("Connected!");
-
+                    // De blocking call is de accept-methode: Een request
+                    // vanuit een browser resulteert hier in een communicatiesocket
+                    TcpClient communicationSocket = listenSocket.AcceptTcpClient();
+                    // Start een handler met deze socket
+                    RequestHandler handler = new RequestHandler(communicationSocket);
+                    handler.Run();
+                    // En ga onmiddleijk klaar staan voor het volgende request
                 }
-
             }
-            catch (SocketException e)
+            catch (IOException e)
             {
+                // TO DO: iets moois
             }
-            catch (IOException ex)
-            {
-            }
-            finally
-            {
-            }
-
         }
     }
 }
