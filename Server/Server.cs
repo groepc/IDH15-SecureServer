@@ -11,9 +11,12 @@ namespace Server
         private TcpListener listenSocket;
 
         //comment
-        public Server(IPAddress ipadress, int port)
+        public Server()
         {
-            listenSocket = new TcpListener(ipadress, port);
+            Int32 port = 13000;
+            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            listenSocket = new TcpListener(localAddr, port);
+            listenSocket.Start();
         }
 
         public void Start()

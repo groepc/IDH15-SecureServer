@@ -62,8 +62,18 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\User_Login_CS.dll" />
+    <Content Include="bin\User_Login_CS.pdb" />
+    <Content Include="bin\WebClient.dll" />
+    <Content Include="bin\WebClient.pdb" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\User_Login_CS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\User_Login_CS.dll" />
+    <Content Include="obj\Debug\User_Login_CS.pdb" />
+    <Content Include="obj\Debug\WebClient.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\WebClient.dll" />
+    <Content Include="obj\Debug\WebClient.pdb" />
     <Content Include="SQL\LoginDB.sql" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -92,7 +102,18 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\User_Login_CS.dll.config" />
+    <Content Include="bin\WebClient.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\User_Login_CS.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\WebClient.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
