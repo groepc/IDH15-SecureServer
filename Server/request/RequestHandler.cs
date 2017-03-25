@@ -27,9 +27,9 @@ namespace Server.request
         {
             try
             {
-                socket_in = socket.; //socket.getInputStream();
-                socket_out = socket.getOutputStream();
-                request = new Request(socket_in);
+                NetworkStream socket_in = socket.GetStream(); //socket.getInputStream();
+                NetworkStream socket_out = socket.GetStream();
+                var request = new Request(socket_in);
 
                 MyFile myfile = new MyFile(webroot + request.getPath());
 
