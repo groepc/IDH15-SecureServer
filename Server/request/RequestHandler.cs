@@ -7,6 +7,7 @@ using System.Net.Sockets;
 
 using static System.Net.WebRequestMethods;
 using System.Text;
+using System.Net;
 
 namespace Server.request
 {
@@ -34,7 +35,6 @@ namespace Server.request
                 MyFile myfile = new MyFile(webroot + request.getPath());
 
                 writeFile(myfile);
-                socket.Close();
             }
             catch (BadRequestException e)
             {
@@ -48,6 +48,16 @@ namespace Server.request
             {
                 writeError(500);
             }
+            Logging logging = new Logging();
+           
+
+            IPEndPoint remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
+            logging.LogStart(remoteIpEndPoint.ToString());
+
+            string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            logging.LogStart(datumTijd);
+           
+            socket.Close();
         }
 
         private void writeError(int status)

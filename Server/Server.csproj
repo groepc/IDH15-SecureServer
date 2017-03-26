@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,7 @@
     <Compile Include="request\RequestHandler.cs" />
     <Compile Include="response\ResponseCodes.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="utils\Logging.cs" />
     <Compile Include="utils\MyFile.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,19 +63,25 @@
     <None Include="bin\Debug\Server.vshost.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.manifest" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Server.exe" />
-    <Content Include="bin\Debug\Server.pdb" />
     <Content Include="bin\Debug\Server.vshost.exe" />
     <Content Include="obj\Debug\Server.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Server.exe" />
-    <Content Include="obj\Debug\Server.pdb" />
+    <Content Include="setup-log\log.txt">
+      <SubType>Component</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebClient\WebClient.csproj">
+      <Project>{6D3D6025-4665-43C1-B7EC-5952F46ED956}</Project>
+      <Name>WebClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
