@@ -18,6 +18,7 @@ namespace Server.request
         private NetworkStream socket_out;
         private Request request;
         private string webroot = "C:/webroot";
+		private string configPath = "/var/www/IDH15-SecureServer/Server/view";
 
         public RequestHandler(TcpClient socket)
         {
@@ -26,13 +27,22 @@ namespace Server.request
 
         public void Run()
         {
-            try
-            {
-                socket_in = socket.GetStream();
-                socket_out = socket.GetStream();
-                request = new Request(socket_in);
+			MyFile myfile = null;
+			try
+			{
+				socket_in = socket.GetStream();
+				socket_out = socket.GetStream();
+				request = new Request(socket_in);
 
-                MyFile myfile = new MyFile(webroot + request.getPath());
+
+
+
+
+				if (request.getPath().Contains("webserverconfig")) {
+					myfile = new MyFile(configPath + request.getPath().Replace("webserverconfig", ""));
+				} else{
+					myfile = new MyFile(webroot + request.getPath());
+				}
 
                 writeFile(myfile);
             }
@@ -46,6 +56,7 @@ namespace Server.request
             }
             catch (IOException e)
             {
+				System.Console.WriteLine(e.Message);
                 writeError(500);
             }
             Logging logging = new Logging();
@@ -56,8 +67,7 @@ namespace Server.request
 
             string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             logging.LogStart(datumTijd);
-           
-            socket.Close();
+			myfile.Close();
         }
 
         private void writeError(int status)
@@ -98,6 +108,7 @@ namespace Server.request
             {
                 write(buffer);
             }
+			myfile.Close();
         }
 
         private void write(string text)

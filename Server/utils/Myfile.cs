@@ -136,5 +136,9 @@ namespace Server.utils
             //  inStream.GetChannel().size();
         }
 
+		public void Close()
+		{
+			inStream.Close();
+		}
     }
 }

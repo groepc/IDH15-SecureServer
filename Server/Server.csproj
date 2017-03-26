@@ -65,6 +65,7 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
     <None Include="Web.config" />
+    <None Include="view\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Server.vshost.exe" />
@@ -76,6 +77,7 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="view\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebClient\WebClient.csproj">
