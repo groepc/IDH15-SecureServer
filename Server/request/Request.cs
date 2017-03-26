@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using Server.utils;
 
 namespace Server.request
 {
@@ -16,14 +18,15 @@ namespace Server.request
         {
             // Strings lezen gaat het gemakkelijkst via een BufferedReader
             TextReader read = new StreamReader(socket_in, Encoding.UTF8);
-
             // Lees de eerste regel, bijvoorbeeld "GET index.php HTTP/1.1"
             line = read.ReadLine();
+            Logging logging = new Logging();
+            logging.LogStart(line.ToString());
 
             // Lees de rest van de request header
-            while (!read.ReadLine().Equals(""))
+            while (read.Peek() > -1)
             {
-                // Doe ik nog niks mee!
+                logging.LogStart(read.ReadLine());
             }
 
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.

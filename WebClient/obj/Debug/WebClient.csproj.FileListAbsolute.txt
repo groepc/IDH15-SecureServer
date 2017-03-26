@@ -8,4 +8,3 @@ C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\WebClient\bin\WebClient.dll
 C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\WebClient\bin\WebClient.pdb
 C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\WebClient\obj\Debug\WebClient.dll
 C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\WebClient\obj\Debug\WebClient.pdb
-C:\Users\Frans\Documents\GitHub\IDH15-SecureServer\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
