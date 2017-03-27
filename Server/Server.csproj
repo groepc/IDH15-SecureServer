@@ -73,11 +73,11 @@
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
+    <Content Include="view\home.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="view\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebClient\WebClient.csproj">
