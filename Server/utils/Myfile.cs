@@ -45,6 +45,7 @@ namespace Server.utils
                 fullPath += "index.html";
 				this.checkIfIndexPageExists(fullPath);
             }
+
             pathParts = fullPath.Split('/');
             if (pathParts.Length > 0)
             {
@@ -58,9 +59,11 @@ namespace Server.utils
 
 		protected void checkIfIndexPageExists(String fullPath)
 		{
-			if (File.Exists(fullPath))
+			System.Console.WriteLine(fullPath);
+			if (!File.Exists(fullPath))
 			{
 				indexPage = true;
+
 			}
 		}
 

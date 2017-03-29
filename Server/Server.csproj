@@ -59,6 +59,8 @@
     <Compile Include="utils\Logging.cs" />
     <Compile Include="utils\MyFile.cs" />
     <Compile Include="utils\FileProcessor.cs" />
+    <Compile Include="response\DirectoryList.cs" />
+    <Compile Include="response\HtmlPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

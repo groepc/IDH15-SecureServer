@@ -37,23 +37,15 @@ namespace Server.request
 				} else{
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
 				}
-				System.Console.WriteLine("Hieronder de value");
-				System.Console.WriteLine(ConfigurationManager.AppSettings.Get("dbon"));
 
-				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == false)
+				System.Console.WriteLine(myfile.indexPageExists());
+
+				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
 				{
-					String[] fileNames = FileProcessor.GetFileNamesDirectory(ConfigurationManager.AppSettings.Get("webroot") + request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
 
-					String varReturn = "<ul>";
+					HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"), request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
 
-					foreach (string fileName in fileNames)
-					{
-						varReturn += "<li>" + fileName +"</li>";
-					}
-
-					varReturn += "</ul>";
-
-					writeString(varReturn);
+					writeString(directoryList.getHtmlPage());
 				}
 				else
 				{
