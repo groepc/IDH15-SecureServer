@@ -4,7 +4,7 @@ using Server.request;
 using System;
 using System.IO;
 using System.Net.Sockets;
-
+using System.Configuration;
 using static System.Net.WebRequestMethods;
 using System.Text;
 using System.Net;
@@ -17,8 +17,6 @@ namespace Server.request
         private NetworkStream socket_in;
         private NetworkStream socket_out;
         private Request request;
-        private string webroot = "C:/webroot";
-		private string configPath = "/var/www/IDH15-SecureServer/Server/view";
 
         public RequestHandler(TcpClient socket)
         {
@@ -34,17 +32,34 @@ namespace Server.request
 				socket_out = socket.GetStream();
 				request = new Request(socket_in);
 
-
-
-
-
 				if (request.getPath().Contains("webserverconfig")) {
-					myfile = new MyFile(configPath + request.getPath().Replace("webserverconfig", ""));
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
 				} else{
-					myfile = new MyFile(webroot + request.getPath());
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
 				}
+				System.Console.WriteLine("Hieronder de value");
+				System.Console.WriteLine(ConfigurationManager.AppSettings.Get("dbon"));
 
-                writeFile(myfile);
+				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == false)
+				{
+					String[] fileNames = FileProcessor.GetFileNamesDirectory(ConfigurationManager.AppSettings.Get("webroot") + request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
+
+					String varReturn = "<ul>";
+
+					foreach (string fileName in fileNames)
+					{
+						varReturn += "<li>" + fileName +"</li>";
+					}
+
+					varReturn += "</ul>";
+
+					writeString(varReturn);
+				}
+				else
+				{
+					writeFile(myfile);
+
+				}
             }
             catch (BadRequestException e)
             {
@@ -90,15 +105,19 @@ namespace Server.request
 
         }
 
-        private void writeHeader(int status, String contentType, long contentLength)
-        {
-            string message = ResponseCodes.getMessage(status);
-            write("HTTP/1.0 " + status + " " + message + "\r\n");
-            write("Content-Type: " + contentType + "\r\n");
-            write("Content-Length: " + contentLength + "\r\n");
-            write("Connection: close " + contentLength + "\r\n");
-            write("\r\n"); // altijd met een lege regel eindigen
-        }
+		private void writeString(String content)
+		{
+			byte[] buffer = Encoding.ASCII.GetBytes(content);
+			try
+			{
+				writeHeader(200, "text/html", buffer.Length);
+				write(buffer);
+			}
+			catch (IOException e)
+			{
+				// ignore error
+			}
+		}
 
         private void writeFile(MyFile myfile)
         {
@@ -110,6 +129,16 @@ namespace Server.request
             }
 			myfile.Close();
         }
+
+		private void writeHeader(int status, String contentType, long contentLength)
+		{
+			string message = ResponseCodes.getMessage(status);
+			write("HTTP/1.0 " + status + " " + message + "\r\n");
+			write("Content-Type: " + contentType + "\r\n");
+			write("Content-Length: " + contentLength + "\r\n");
+			write("Connection: close " + contentLength + "\r\n");
+			write("\r\n"); // altijd met een lege regel eindigen
+		}
 
         private void write(string text)
         {

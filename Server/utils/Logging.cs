@@ -34,7 +34,7 @@ namespace Server.utils
                 string s = "";
                 while ((s = sr.ReadLine()) != null)
                 {
-                    Console.WriteLine(s);
+                   // Console.WriteLine(s);
                 }
             }
 
