@@ -4,7 +4,7 @@ using Server.request;
 using System;
 using System.IO;
 using System.Net.Sockets;
-
+using System.Configuration;
 using static System.Net.WebRequestMethods;
 using System.Text;
 using System.Net;
@@ -17,7 +17,6 @@ namespace Server.request
         private NetworkStream socket_in;
         private NetworkStream socket_out;
         private Request request;
-        private string webroot = "C:/webroot";
 
         public RequestHandler(TcpClient socket)
         {
@@ -26,15 +25,33 @@ namespace Server.request
 
         public void Run()
         {
-            try
-            {
-                socket_in = socket.GetStream();
-                socket_out = socket.GetStream();
-                request = new Request(socket_in);
+			MyFile myfile = null;
+			try
+			{
+				socket_in = socket.GetStream();
+				socket_out = socket.GetStream();
+				request = new Request(socket_in);
 
-                MyFile myfile = new MyFile(webroot + request.getPath());
+				if (request.getPath().Contains("webserverconfig")) {
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
+				} else{
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
+				}
 
-                writeFile(myfile);
+				System.Console.WriteLine(myfile.indexPageExists());
+
+				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
+				{
+
+					HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"), request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
+
+					writeString(directoryList.getHtmlPage());
+				}
+				else
+				{
+					writeFile(myfile);
+
+				}
             }
             catch (BadRequestException e)
             {
@@ -46,6 +63,7 @@ namespace Server.request
             }
             catch (IOException e)
             {
+				System.Console.WriteLine(e.Message);
                 writeError(500);
             }
             Logging logging = new Logging();
@@ -56,8 +74,7 @@ namespace Server.request
 
             string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             logging.LogStart(datumTijd);
-           
-            socket.Close();
+			myfile.Close();
         }
 
         private void writeError(int status)
@@ -80,15 +97,19 @@ namespace Server.request
 
         }
 
-        private void writeHeader(int status, String contentType, long contentLength)
-        {
-            string message = ResponseCodes.getMessage(status);
-            write("HTTP/1.0 " + status + " " + message + "\r\n");
-            write("Content-Type: " + contentType + "\r\n");
-            write("Content-Length: " + contentLength + "\r\n");
-            write("Connection: close " + contentLength + "\r\n");
-            write("\r\n"); // altijd met een lege regel eindigen
-        }
+		private void writeString(String content)
+		{
+			byte[] buffer = Encoding.ASCII.GetBytes(content);
+			try
+			{
+				writeHeader(200, "text/html", buffer.Length);
+				write(buffer);
+			}
+			catch (IOException e)
+			{
+				// ignore error
+			}
+		}
 
         private void writeFile(MyFile myfile)
         {
@@ -98,7 +119,18 @@ namespace Server.request
             {
                 write(buffer);
             }
+			myfile.Close();
         }
+
+		private void writeHeader(int status, String contentType, long contentLength)
+		{
+			string message = ResponseCodes.getMessage(status);
+			write("HTTP/1.0 " + status + " " + message + "\r\n");
+			write("Content-Type: " + contentType + "\r\n");
+			write("Content-Length: " + contentLength + "\r\n");
+			write("Connection: close " + contentLength + "\r\n");
+			write("\r\n"); // altijd met een lege regel eindigen
+		}
 
         private void write(string text)
         {

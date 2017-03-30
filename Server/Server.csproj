@@ -42,6 +42,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
@@ -56,6 +58,9 @@
     <Compile Include="Server.cs" />
     <Compile Include="utils\Logging.cs" />
     <Compile Include="utils\MyFile.cs" />
+    <Compile Include="utils\FileProcessor.cs" />
+    <Compile Include="response\DirectoryList.cs" />
+    <Compile Include="response\HtmlPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -65,6 +70,7 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
     <None Include="Web.config" />
+    <None Include="view\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Server.vshost.exe" />
@@ -72,6 +78,7 @@
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
+    <Content Include="view\home.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

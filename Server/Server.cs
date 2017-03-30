@@ -1,5 +1,6 @@
 ﻿using Server.request;
 using System;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
@@ -13,8 +14,8 @@ namespace Server
         //comment
         public Server()
         {
-            Int32 port = 13000;
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("webport"));
+            IPAddress localAddr = IPAddress.Parse(ConfigurationManager.AppSettings.Get("ipadress"));
             listenSocket = new TcpListener(localAddr, port);
             listenSocket.Start();
         }

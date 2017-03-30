@@ -15,6 +15,7 @@ namespace Server.utils
         string name;
         string ext;
         FileStream inStream;
+		Boolean indexPage = false;
      
         /**
          * Get the input stream
@@ -42,7 +43,9 @@ namespace Server.utils
             if (fullPath.EndsWith("/"))
             {
                 fullPath += "index.html";
+				this.checkIfIndexPageExists(fullPath);
             }
+
             pathParts = fullPath.Split('/');
             if (pathParts.Length > 0)
             {
@@ -53,6 +56,21 @@ namespace Server.utils
                 name = "";
             }
         }
+
+		protected void checkIfIndexPageExists(String fullPath)
+		{
+			System.Console.WriteLine(fullPath);
+			if (!File.Exists(fullPath))
+			{
+				indexPage = true;
+
+			}
+		}
+
+		public Boolean indexPageExists()
+		{
+			return indexPage;
+		}
 
         public override string ToString()
         {
@@ -136,5 +154,12 @@ namespace Server.utils
             //  inStream.GetChannel().size();
         }
 
+		public void Close()
+		{
+			if (inStream != null)
+			{
+				inStream.Close();
+			}
+		}
     }
 }
