@@ -11,12 +11,13 @@ using System.Net;
 
 namespace Server.request
 {
-	public class RequestHandler : TcpClient
-	{
-		private TcpClient socket;
-		private NetworkStream socket_in;
-		private NetworkStream socket_out;
-		private Request request;
+    public class RequestHandler : TcpClient
+    {
+        private TcpClient socket;
+        private NetworkStream socket_in;
+        private NetworkStream socket_out;
+        private Request request;
+        private IPEndPoint remoteIpEndPoint;
 
 		public RequestHandler(TcpClient socket)
 		{
@@ -27,17 +28,16 @@ namespace Server.request
 		{
 			MyFile myfile = null;
 			try
-			{
-				socket_in = socket.GetStream();
+            {
+                socket_in = socket.GetStream();
 				socket_out = socket.GetStream();
-				request = new Request(socket_in);
+                remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
 
-				if (request.getPath().Contains("webserverconfig"))
-				{
-					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath") + request.getPath().Replace("webserverconfig", ""));
-				}
-				else
-				{
+                request = new Request(socket_in, remoteIpEndPoint.ToString());
+
+				if (request.getPath().Contains("webserverconfig")) {
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
+				} else{
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
 				}
 
@@ -68,14 +68,7 @@ namespace Server.request
 			{
 				writeString((new Error(500)).getHtmlPage());
 			}
-			Logging logging = new Logging();
-
-
-			IPEndPoint remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
-			logging.LogStart(remoteIpEndPoint.ToString());
-
-			string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-			logging.LogStart(datumTijd);
+			
 			myfile.Close();
 		}
 

@@ -14,19 +14,21 @@ namespace Server.request
     {
         private string line, command, path, protocol;
 
-        public Request(NetworkStream socket_in)
+        public Request(NetworkStream socket_in, string remoteIpEndPoint)
         {
             // Strings lezen gaat het gemakkelijkst via een BufferedReader
             TextReader read = new StreamReader(socket_in, Encoding.UTF8);
             // Lees de eerste regel, bijvoorbeeld "GET index.php HTTP/1.1"
             line = read.ReadLine();
+
             Logging logging = new Logging();
-            logging.LogStart(line.ToString());
+            logging.LogStart(remoteIpEndPoint);
+            logging.LogWrite(line.ToString());
 
             // Lees de rest van de request header
             while (read.Peek() > -1)
             {
-                logging.LogStart(read.ReadLine());
+                logging.LogWrite(read.ReadLine());
             }
 
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
@@ -43,6 +45,8 @@ namespace Server.request
             {
                 throw (new BadRequestException("Unknown request: " + command));
             }
+            logging.LogEnd();
+        
 
 			readGetVariables(line);
 
