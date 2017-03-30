@@ -10,7 +10,7 @@ namespace Server
 		{
 			string html = "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>" + pageName +  "</title></head><body>";
 
-			html += this.content;
+			html += content;
 
 			html += "</body></html>";
 			return html;

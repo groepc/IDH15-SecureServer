@@ -11,20 +11,20 @@ using System.Net;
 
 namespace Server.request
 {
-    public class RequestHandler : TcpClient
-    {
-        private TcpClient socket;
-        private NetworkStream socket_in;
-        private NetworkStream socket_out;
-        private Request request;
+	public class RequestHandler : TcpClient
+	{
+		private TcpClient socket;
+		private NetworkStream socket_in;
+		private NetworkStream socket_out;
+		private Request request;
 
-        public RequestHandler(TcpClient socket)
-        {
-            this.socket = socket;
-        }
+		public RequestHandler(TcpClient socket)
+		{
+			this.socket = socket;
+		}
 
-        public void Run()
-        {
+		public void Run()
+		{
 			MyFile myfile = null;
 			try
 			{
@@ -32,9 +32,12 @@ namespace Server.request
 				socket_out = socket.GetStream();
 				request = new Request(socket_in);
 
-				if (request.getPath().Contains("webserverconfig")) {
-					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
-				} else{
+				if (request.getPath().Contains("webserverconfig"))
+				{
+					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath") + request.getPath().Replace("webserverconfig", ""));
+				}
+				else
+				{
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
 				}
 
@@ -52,75 +55,48 @@ namespace Server.request
 					writeFile(myfile);
 
 				}
-            }
-            catch (BadRequestException e)
-            {
-                writeError(400);
-            }
-            catch (FileNotFoundException e)
-            {
-                writeError(404);
-            }
-            catch (IOException e)
-            {
-				System.Console.WriteLine(e.Message);
-                writeError(500);
-            }
-            Logging logging = new Logging();
-           
+			}
+			catch (BadRequestException e)
+			{
+				writeString((new Error(400)).getHtmlPage());
+			}
+			catch (FileNotFoundException e)
+			{
+				writeString((new Error(404)).getHtmlPage());
+			}
+			catch (IOException e)
+			{
+				writeString((new Error(500)).getHtmlPage());
+			}
+			Logging logging = new Logging();
 
-            IPEndPoint remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
-            logging.LogStart(remoteIpEndPoint.ToString());
 
-            string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            logging.LogStart(datumTijd);
+			IPEndPoint remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
+			logging.LogStart(remoteIpEndPoint.ToString());
+
+			string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+			logging.LogStart(datumTijd);
 			myfile.Close();
-        }
-
-        private void writeError(int status)
-        {
-
-            string text = status + " " + ResponseCodes.getMessage(status) + ":\r\n" + request;
-
-           //System.err.println(text);
-
-            byte[] buffer = Encoding.ASCII.GetBytes(text);
-            try
-            {
-                writeHeader(status, "text/plain", buffer.Length);
-                write(buffer);
-            }
-            catch (IOException e)
-            {
-                // ignore error
-            }
-
-        }
+		}
 
 		private void writeString(String content)
 		{
 			byte[] buffer = Encoding.ASCII.GetBytes(content);
-			try
-			{
-				writeHeader(200, "text/html", buffer.Length);
-				write(buffer);
-			}
-			catch (IOException e)
-			{
-				// ignore error
-			}
+			writeHeader(200, "text/html", buffer.Length);
+			write(buffer);
+
 		}
 
-        private void writeFile(MyFile myfile)
-        {
-            writeHeader(200, myfile.GetContentType(), myfile.GetLength());
-            byte[] buffer = new byte[1024];
-            while (myfile.Read(buffer, buffer.Length) > 0)
-            {
-                write(buffer);
-            }
+		private void writeFile(MyFile myfile)
+		{
+			writeHeader(200, myfile.GetContentType(), myfile.GetLength());
+			byte[] buffer = new byte[1024];
+			while (myfile.Read(buffer, buffer.Length) > 0)
+			{
+				write(buffer);
+			}
 			myfile.Close();
-        }
+		}
 
 		private void writeHeader(int status, String contentType, long contentLength)
 		{
@@ -132,15 +108,15 @@ namespace Server.request
 			write("\r\n"); // altijd met een lege regel eindigen
 		}
 
-        private void write(string text)
-        {
-            byte[] myWriteBuffer = Encoding.ASCII.GetBytes(text);
-            write(myWriteBuffer);
-        }
+		private void write(string text)
+		{
+			byte[] myWriteBuffer = Encoding.ASCII.GetBytes(text);
+			write(myWriteBuffer);
+		}
 
-        private void write(byte[] data)
-        {
-            socket_out.Write(data, 0, data.Length);
-        }
-    }
+		private void write(byte[] data)
+		{
+			socket_out.Write(data, 0, data.Length);
+		}
+	}
 }

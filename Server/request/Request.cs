@@ -39,11 +39,20 @@ namespace Server.request
             command = parts[0];
             path = parts[1];
             protocol = parts[2];
-            if (!command.Equals("GET"))
+			if (!command.Equals("GET") && !command.Equals("POST"))
             {
                 throw (new BadRequestException("Unknown request: " + command));
             }
+
+			readGetVariables(line);
+
         }
+
+		protected void readGetVariables(string line)
+		{
+
+			System.Console.Write(line);
+		}
 
         //@Override
         public string toString()
