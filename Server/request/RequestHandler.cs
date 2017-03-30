@@ -17,6 +17,7 @@ namespace Server.request
         private NetworkStream socket_in;
         private NetworkStream socket_out;
         private Request request;
+        private IPEndPoint remoteIpEndPoint;
 
         public RequestHandler(TcpClient socket)
         {
@@ -27,10 +28,12 @@ namespace Server.request
         {
 			MyFile myfile = null;
 			try
-			{
-				socket_in = socket.GetStream();
+            {
+                socket_in = socket.GetStream();
 				socket_out = socket.GetStream();
-				request = new Request(socket_in);
+                remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
+
+                request = new Request(socket_in, remoteIpEndPoint.ToString());
 
 				if (request.getPath().Contains("webserverconfig")) {
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
@@ -66,15 +69,7 @@ namespace Server.request
 				System.Console.WriteLine(e.Message);
                 writeError(500);
             }
-            Logging logging = new Logging();
-           
-
-            IPEndPoint remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
-            logging.LogStart(remoteIpEndPoint.ToString());
-
-            string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            logging.LogStart(datumTijd);
-			myfile.Close();
+            myfile.Close();
         }
 
         private void writeError(int status)

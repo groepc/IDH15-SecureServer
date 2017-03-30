@@ -67,18 +67,27 @@
     <None Include="bin\Debug\Server.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.manifest" />
+    <None Include="bin\Debug\setup-log" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
     <None Include="Web.config" />
     <None Include="view\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\log.txt" />
+    <Content Include="bin\Debug\Server.exe" />
+    <Content Include="bin\Debug\Server.pdb" />
     <Content Include="bin\Debug\Server.vshost.exe" />
+    <Content Include="bin\Debug\WebClient.dll" />
+    <Content Include="bin\Debug\WebClient.pdb" />
     <Content Include="obj\Debug\Server.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Server.exe" />
+    <Content Include="obj\Debug\Server.pdb" />
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
     <Content Include="view\home.html" />
+    <Content Include="Webserverconfig.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
