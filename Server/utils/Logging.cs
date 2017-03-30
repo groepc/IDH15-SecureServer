@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Reflection;
 
@@ -9,7 +10,7 @@ namespace Server.utils
     {
         public void LogStart(string logMessage)
         {
-            string logsDirectory = @"..\..\setup-log\log.txt";
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
            
             // This text is added only once to the file.
             if (!File.Exists(logsDirectory))
