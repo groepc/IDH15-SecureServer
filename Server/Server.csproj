@@ -61,6 +61,7 @@
     <Compile Include="utils\FileProcessor.cs" />
     <Compile Include="response\DirectoryList.cs" />
     <Compile Include="response\HtmlPage.cs" />
+    <Compile Include="response\Error.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

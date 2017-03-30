@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Reflection;
@@ -10,8 +11,8 @@ namespace Server.utils
     {
         public void LogStart(string remoteIpEndPoint)
         {
-            string logsDirectory = @"..\..\setup-log\log.txt";
-
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
+           
             // This text is added only once to the file.
             if (!File.Exists(logsDirectory))
             {
@@ -30,7 +31,7 @@ namespace Server.utils
 
         public void LogWrite(string logMessage)
         {
-            string logsDirectory = @"..\..\setup-log\log.txt";
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
             using (StreamWriter sw = File.AppendText(logsDirectory))
             {
                 sw.WriteLine(logMessage);
@@ -38,7 +39,7 @@ namespace Server.utils
         }
         public void LogRead()
         {
-            string logsDirectory = @"..\..\setup-log\log.txt";
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
             using (StreamReader sr = File.OpenText(logsDirectory))
             {
                 string s = "";
@@ -50,7 +51,7 @@ namespace Server.utils
         }
         public void LogEnd()
         {
-            string logsDirectory = @"..\..\setup-log\log.txt";
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
             using (StreamWriter sw = File.AppendText(logsDirectory))
             {
                 sw.WriteLine(@"/################# End Logging ####################\");
