@@ -35,7 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +48,22 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\LoginHandler.cs" />
+    <Compile Include="Handlers\WebserverconfigHandler.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="request\BadRequestException.cs" />
+    <Compile Include="Handlers\IPageHandler.cs" />
+    <Compile Include="Handlers\PageHandlerFactory.cs" />
     <Compile Include="request\Request.cs" />
     <Compile Include="request\RequestHandler.cs" />
     <Compile Include="response\ResponseCodes.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="utils\Logging.cs" />
+    <Compile Include="utils\Login.cs" />
     <Compile Include="utils\MyFile.cs" />
     <Compile Include="utils\FileProcessor.cs" />
     <Compile Include="response\DirectoryList.cs" />
@@ -71,8 +78,10 @@
     <None Include="bin\Debug\setup-log" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
-    <None Include="Web.config" />
-    <None Include="view\index.html" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="view\login.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\log.txt" />
@@ -87,18 +96,12 @@
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
-    <Content Include="view\home.html" />
-    <Content Include="Webserverconfig.xml" />
+    <Content Include="view\index.html" />
+    <Content Include="view\settings.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebClient\WebClient.csproj">
-      <Project>{6D3D6025-4665-43C1-B7EC-5952F46ED956}</Project>
-      <Name>WebClient</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

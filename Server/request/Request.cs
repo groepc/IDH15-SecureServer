@@ -12,7 +12,7 @@ namespace Server.request
 {
     public class Request
     {
-        private string line, command, path, protocol;
+        public string line, command, path, protocol;
 
         public Request(NetworkStream socket_in, string remoteIpEndPoint)
         {
@@ -34,27 +34,27 @@ namespace Server.request
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
             // (de browser moet spaties in het derde deel netjes door %20 vervangen)
             string[] parts = line.Split(' ');
+
             if (parts.Length != 3)
             {
                 throw (new BadRequestException("Syntax error in request: " + line));
             }
+
             command = parts[0];
             path = parts[1];
             protocol = parts[2];
+
 			if (!command.Equals("GET") && !command.Equals("POST"))
             {
                 throw (new BadRequestException("Unknown request: " + command));
             }
             logging.LogEnd();
         
-
 			readGetVariables(line);
-
         }
 
 		protected void readGetVariables(string line)
 		{
-
 			System.Console.Write(line);
 		}
 

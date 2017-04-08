@@ -27,6 +27,7 @@ namespace Server.request
 		public void Run()
 		{
 			MyFile myfile = null;
+
 			try
             {
                 socket_in = socket.GetStream();
@@ -35,9 +36,32 @@ namespace Server.request
 
                 request = new Request(socket_in, remoteIpEndPoint.ToString());
 
-				if (request.getPath().Contains("webserverconfig")) {
-					myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
-				} else{
+                string actualPath = request.path;
+                IPageHandler pageHandler = PageHandlerFactory.Create(actualPath);
+
+                // Map and parse the relative path to get the actual file info
+                string requestedFile = ConfigurationManager.AppSettings.Get("webroot") + actualPath;
+    
+                if (pageHandler != null)
+                {
+                    switch (request.command)
+                    {
+                        case "GET":
+                            myfile = pageHandler.HandleGet(request, requestedFile);
+                            break;
+                        case "POST":
+                            myfile = pageHandler.HandlePost(request, requestedFile);
+                            break;
+                    }
+                }
+
+
+    //            if (request.getPath().Contains("webserverconfig")) {
+
+				//	myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
+				//} 
+                else
+                {
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
 				}
 
@@ -45,16 +69,13 @@ namespace Server.request
 
 				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
 				{
-
 					HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"), request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
-
 					writeString(directoryList.getHtmlPage());
 				}
 				else
 				{
 					writeFile(myfile);
-
-				}
+                }
 			}
 			catch (BadRequestException e)
 			{
@@ -77,7 +98,6 @@ namespace Server.request
 			byte[] buffer = Encoding.ASCII.GetBytes(content);
 			writeHeader(200, "text/html", buffer.Length);
 			write(buffer);
-
 		}
 
 		private void writeFile(MyFile myfile)

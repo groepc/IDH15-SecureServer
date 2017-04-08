@@ -37,6 +37,7 @@ namespace Server.utils
                 sw.WriteLine(logMessage);
             }
         }
+
         public void LogRead()
         {
             string logsDirectory = ConfigurationManager.AppSettings.Get("log");
