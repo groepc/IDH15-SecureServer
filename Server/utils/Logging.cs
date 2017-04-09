@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Configuration;
 using System.IO;
-using System.Net;
-using System.Reflection;
+using System.Linq;
 
 namespace Server.utils
 {
-
     public class Logging
     {
         public void LogStart(string remoteIpEndPoint)
@@ -50,6 +48,14 @@ namespace Server.utils
                 }
             }
         }
+
+        public static string ReadFormdata()
+        {
+            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
+            string formdata = File.ReadLines(logsDirectory).Last();
+            return formdata;
+        }
+
         public void LogEnd()
         {
             string logsDirectory = ConfigurationManager.AppSettings.Get("log");

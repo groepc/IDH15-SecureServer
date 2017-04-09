@@ -25,9 +25,8 @@ namespace Server.request
 		}
 
 		public void Run()
-		{
+        {
 			MyFile myfile = null;
-
 			try
             {
                 socket_in = socket.GetStream();
@@ -54,12 +53,6 @@ namespace Server.request
                             break;
                     }
                 }
-
-
-    //            if (request.getPath().Contains("webserverconfig")) {
-
-				//	myfile = new MyFile(ConfigurationManager.AppSettings.Get("configpath")+ request.getPath().Replace("webserverconfig", ""));
-				//} 
                 else
                 {
 					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());

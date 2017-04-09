@@ -1,113 +1,7 @@
 /################# Start Logging ####################\
-Date and Time: 2017-04-05 23:21:54
-Client IP-Adress: 127.0.0.1:54161
+Date and Time: 2017-04-08 14:29:37
+Client IP-Adress: 127.0.0.1:61876
 GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:21:55
-Client IP-Adress: 127.0.0.1:54162
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:22:01
-Client IP-Adress: 127.0.0.1:54170
-GET /Login?username=ed&password=123 HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:23:23
-Client IP-Adress: 127.0.0.1:54280
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:23:24
-Client IP-Adress: 127.0.0.1:54281
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:23:30
-Client IP-Adress: 127.0.0.1:54285
-GET /Login?username=ed&password=123 HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:30:02
-Client IP-Adress: 127.0.0.1:54450
-GET /Login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:30:02
-Client IP-Adress: 127.0.0.1:54451
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/Login.aspx
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:30:10
-Client IP-Adress: 127.0.0.1:54452
-GET /Login.aspx HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
 Cache-Control: max-age=0
@@ -119,8 +13,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-05 23:30:11
-Client IP-Adress: 127.0.0.1:54453
+Date and Time: 2017-04-08 14:29:52
+Client IP-Adress: 127.0.0.1:61877
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -128,275 +22,14 @@ Pragma: no-cache
 Cache-Control: no-cache
 User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/Login.aspx
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:31:21
-Client IP-Adress: 127.0.0.1:54461
-GET /Login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:31:29
-Client IP-Adress: 127.0.0.1:54462
-GET /Login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:10
-Client IP-Adress: 127.0.0.1:54564
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:11
-Client IP-Adress: 127.0.0.1:54565
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
 Referer: http://127.0.0.1:13000/
 Accept-Encoding: gzip, deflate, sdch, br
 Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:19
-Client IP-Adress: 127.0.0.1:54566
-GET /Login?username=123&password=ed HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:40
-Client IP-Adress: 127.0.0.1:54600
-GET /login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:40
-Client IP-Adress: 127.0.0.1:54667
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/login.aspx
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:50
-Client IP-Adress: 127.0.0.1:54668
-GET /login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:50
-Client IP-Adress: 127.0.0.1:54669
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/login.aspx
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:54
-Client IP-Adress: 127.0.0.1:54670
-GET /login.aspx HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-05 23:33:54
-Client IP-Adress: 127.0.0.1:54671
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/login.aspx
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:01:26
-Client IP-Adress: 127.0.0.1:56954
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:01:26
-Client IP-Adress: 127.0.0.1:56955
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:01:29
-Client IP-Adress: 127.0.0.1:57000
-GET /Login?username=&password= HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:04:58
-Client IP-Adress: 127.0.0.1:57122
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:04:59
-Client IP-Adress: 127.0.0.1:57123
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:05:02
-Client IP-Adress: 127.0.0.1:57130
-GET /Login?username=&password= HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:14
-Client IP-Adress: 127.0.0.1:57232
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:14
-Client IP-Adress: 127.0.0.1:57233
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:16
-Client IP-Adress: 127.0.0.1:57234
+Date and Time: 2017-04-08 14:29:59
+Client IP-Adress: 127.0.0.1:61882
 GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -408,11 +41,27 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:16
-Client IP-Adress: 127.0.0.1:57235
+Date and Time: 2017-04-08 14:30:23
+Client IP-Adress: 127.0.0.1:61985
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 14:30:33
+Client IP-Adress: 127.0.0.1:61986
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
 User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Accept: image/webp,image/*,*/*;q=0.8
 Referer: http://127.0.0.1:13000/login.html
@@ -421,8 +70,37 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:19
-Client IP-Adress: 127.0.0.1:57237
+Date and Time: 2017-04-08 14:31:25
+Client IP-Adress: 127.0.0.1:62081
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 14:31:36
+Client IP-Adress: 127.0.0.1:62082
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:34:34
+Client IP-Adress: 127.0.0.1:62637
 GET / HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -434,8 +112,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:20
-Client IP-Adress: 127.0.0.1:57238
+Date and Time: 2017-04-08 15:34:34
+Client IP-Adress: 127.0.0.1:62638
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -447,22 +125,337 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:06:24
-Client IP-Adress: 127.0.0.1:57239
-GET /Login?username=12&password= HTTP/1.1
+Date and Time: 2017-04-08 15:34:42
+Client IP-Adress: 127.0.0.1:62639
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:35:06
+Client IP-Adress: 127.0.0.1:62748
+GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
+Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
 Accept-Encoding: gzip, deflate, sdch, br
 Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:16:03
-Client IP-Adress: 127.0.0.1:57400
+Date and Time: 2017-04-08 15:35:07
+Client IP-Adress: 127.0.0.1:62749
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:35:12
+Client IP-Adress: 127.0.0.1:62752
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:36:32
+Client IP-Adress: 127.0.0.1:62853
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:36:32
+Client IP-Adress: 127.0.0.1:62854
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:39:02
+Client IP-Adress: 127.0.0.1:62869
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:40:04
+Client IP-Adress: 127.0.0.1:62976
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:40:04
+Client IP-Adress: 127.0.0.1:62977
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:40:10
+Client IP-Adress: 127.0.0.1:62979
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:43:25
+Client IP-Adress: 127.0.0.1:63078
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:43:25
+Client IP-Adress: 127.0.0.1:63079
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:43:30
+Client IP-Adress: 127.0.0.1:63080
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:44:41
+Client IP-Adress: 127.0.0.1:63179
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:44:41
+Client IP-Adress: 127.0.0.1:63180
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:44:49
+Client IP-Adress: 127.0.0.1:63181
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:45:23
+Client IP-Adress: 127.0.0.1:63270
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:45:23
+Client IP-Adress: 127.0.0.1:63271
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:45:28
+Client IP-Adress: 127.0.0.1:63272
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:46:33
+Client IP-Adress: 127.0.0.1:63362
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:46:45
+Client IP-Adress: 127.0.0.1:63363
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:47:07
+Client IP-Adress: 127.0.0.1:63369
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:47:46
+Client IP-Adress: 127.0.0.1:63464
 GET / HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -474,35 +467,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:16:04
-Client IP-Adress: 127.0.0.1:57401
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:16:08
-Client IP-Adress: 127.0.0.1:57402
-GET /Login?username=1&password= HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:18:34
-Client IP-Adress: 127.0.0.1:57528
+Date and Time: 2017-04-08 15:48:12
+Client IP-Adress: 127.0.0.1:63548
 GET / HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -514,21 +480,200 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:18:35
-Client IP-Adress: 127.0.0.1:57529
-GET /favicon.ico HTTP/1.1
+Date and Time: 2017-04-08 15:48:49
+Client IP-Adress: 127.0.0.1:63648
+GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 Accept-Encoding: gzip, deflate, sdch, br
 Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:18:36
-Client IP-Adress: 127.0.0.1:57530
+Date and Time: 2017-04-08 15:48:50
+Client IP-Adress: 127.0.0.1:63649
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:49:24
+Client IP-Adress: 127.0.0.1:63650
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:55:58
+Client IP-Adress: 127.0.0.1:63785
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:56:13
+Client IP-Adress: 127.0.0.1:63790
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:56:17
+Client IP-Adress: 127.0.0.1:63791
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:59:51
+Client IP-Adress: 127.0.0.1:63912
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 15:59:54
+Client IP-Adress: 127.0.0.1:63917
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 16:00:09
+Client IP-Adress: 127.0.0.1:63918
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 16:22:30
+Client IP-Adress: 127.0.0.1:64152
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 16:24:13
+Client IP-Adress: 127.0.0.1:64157
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-08 16:26:00
+Client IP-Adress: 127.0.0.1:64159
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=Mieke&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:17:54
+Client IP-Adress: 127.0.0.1:50044
 GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -540,11 +685,30 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:18:36
-Client IP-Adress: 127.0.0.1:57531
+Date and Time: 2017-04-09 11:17:57
+Client IP-Adress: 127.0.0.1:50045
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:18:26
+Client IP-Adress: 127.0.0.1:50151
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:18:29
+Client IP-Adress: 127.0.0.1:50157
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
 User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Accept: image/webp,image/*,*/*;q=0.8
 Referer: http://127.0.0.1:13000/login.html
@@ -553,8 +717,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:18:39
-Client IP-Adress: 127.0.0.1:57532
+Date and Time: 2017-04-09 11:18:50
+Client IP-Adress: 127.0.0.1:50158
 POST /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -569,35 +733,11 @@ Referer: http://127.0.0.1:13000/login.html
 Accept-Encoding: gzip, deflate, br
 Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 12:28:04
-Client IP-Adress: 127.0.0.1:57702
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
+username=mi&password=123&Login=Login
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 12:34:24
-Client IP-Adress: 127.0.0.1:57703
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:44:45
-Client IP-Adress: 127.0.0.1:58353
+Date and Time: 2017-04-09 11:25:39
+Client IP-Adress: 127.0.0.1:50307
 GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -610,162 +750,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 13:45:23
-Client IP-Adress: 127.0.0.1:58529
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:46:02
-Client IP-Adress: 127.0.0.1:58619
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:49:08
-Client IP-Adress: 127.0.0.1:58804
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:50:11
-Client IP-Adress: 127.0.0.1:58905
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:50:54
-Client IP-Adress: 127.0.0.1:59071
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:53:35
-Client IP-Adress: 127.0.0.1:59188
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:56:53
-Client IP-Adress: 127.0.0.1:59376
-GET / HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:56:58
-Client IP-Adress: 127.0.0.1:59377
-GET /favicon.ico HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://127.0.0.1:13000/
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:57:22
-Client IP-Adress: 127.0.0.1:59385
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:57:41
-Client IP-Adress: 127.0.0.1:59453
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:59:36
-Client IP-Adress: 127.0.0.1:59660
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 13:59:38
-Client IP-Adress: 127.0.0.1:59661
+Date and Time: 2017-04-09 11:25:43
+Client IP-Adress: 127.0.0.1:50312
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -779,11 +765,27 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 13:59:52
-Client IP-Adress: 127.0.0.1:59662
+Date and Time: 2017-04-09 11:25:54
+Client IP-Adress: 127.0.0.1:50313
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 14:00:10
-Client IP-Adress: 127.0.0.1:59762
+Date and Time: 2017-04-09 11:26:34
+Client IP-Adress: 127.0.0.1:50407
 GET /login.html HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -796,22 +798,8 @@ Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
 /################# End Logging ####################\
 /################# Start Logging ####################\
-Date and Time: 2017-04-08 14:12:10
-Client IP-Adress: 127.0.0.1:60008
-GET /login.html HTTP/1.1
-Host: 127.0.0.1:13000
-Connection: keep-alive
-Cache-Control: max-age=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch, br
-Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
-
-/################# End Logging ####################\
-/################# Start Logging ####################\
-Date and Time: 2017-04-08 14:12:54
-Client IP-Adress: 127.0.0.1:60014
+Date and Time: 2017-04-09 11:26:35
+Client IP-Adress: 127.0.0.1:50408
 GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:13000
 Connection: keep-alive
@@ -823,4 +811,1457 @@ Referer: http://127.0.0.1:13000/login.html
 Accept-Encoding: gzip, deflate, sdch, br
 Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
 
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:26:41
+Client IP-Adress: 127.0.0.1:50416
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:27:07
+Client IP-Adress: 127.0.0.1:50503
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:27:28
+Client IP-Adress: 127.0.0.1:50536
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:27:28
+Client IP-Adress: 127.0.0.1:50549
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:27:34
+Client IP-Adress: 127.0.0.1:50604
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:28:13
+Client IP-Adress: 127.0.0.1:50691
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:28:13
+Client IP-Adress: 127.0.0.1:50692
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:28:23
+Client IP-Adress: 127.0.0.1:50694
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 35
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=1&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:32:48
+Client IP-Adress: 127.0.0.1:50816
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:34:33
+Client IP-Adress: 127.0.0.1:50922
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:34:37
+Client IP-Adress: 127.0.0.1:50927
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:34:44
+Client IP-Adress: 127.0.0.1:50929
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:35:30
+Client IP-Adress: 127.0.0.1:51013
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:35:33
+Client IP-Adress: 127.0.0.1:51026
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:35:40
+Client IP-Adress: 127.0.0.1:51027
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:37:09
+Client IP-Adress: 127.0.0.1:51135
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:37:13
+Client IP-Adress: 127.0.0.1:51136
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:37:20
+Client IP-Adress: 127.0.0.1:51145
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:42:48
+Client IP-Adress: 127.0.0.1:51344
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:42:55
+Client IP-Adress: 127.0.0.1:51345
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:43:04
+Client IP-Adress: 127.0.0.1:51350
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=000&password=000&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:45:31
+Client IP-Adress: 127.0.0.1:51452
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:45:35
+Client IP-Adress: 127.0.0.1:51453
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:45:46
+Client IP-Adress: 127.0.0.1:51458
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:47:24
+Client IP-Adress: 127.0.0.1:51661
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:47:26
+Client IP-Adress: 127.0.0.1:51662
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:47:35
+Client IP-Adress: 127.0.0.1:51668
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:53:01
+Client IP-Adress: 127.0.0.1:51774
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:53:06
+Client IP-Adress: 127.0.0.1:51775
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:53:15
+Client IP-Adress: 127.0.0.1:51780
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:56:38
+Client IP-Adress: 127.0.0.1:51892
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:56:48
+Client IP-Adress: 127.0.0.1:51893
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:57:06
+Client IP-Adress: 127.0.0.1:51898
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:58:06
+Client IP-Adress: 127.0.0.1:51991
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:58:06
+Client IP-Adress: 127.0.0.1:51992
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:58:10
+Client IP-Adress: 127.0.0.1:51993
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:59:17
+Client IP-Adress: 127.0.0.1:52088
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:59:18
+Client IP-Adress: 127.0.0.1:52089
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 11:59:21
+Client IP-Adress: 127.0.0.1:52090
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:01:13
+Client IP-Adress: 127.0.0.1:52191
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:01:14
+Client IP-Adress: 127.0.0.1:52192
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:01:17
+Client IP-Adress: 127.0.0.1:52193
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:03:50
+Client IP-Adress: 127.0.0.1:52313
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:03:50
+Client IP-Adress: 127.0.0.1:52314
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:03:53
+Client IP-Adress: 127.0.0.1:52316
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:06:12
+Client IP-Adress: 127.0.0.1:52423
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:06:12
+Client IP-Adress: 127.0.0.1:52424
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:06:15
+Client IP-Adress: 127.0.0.1:52425
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:06:59
+Client IP-Adress: 127.0.0.1:52523
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:06:59
+Client IP-Adress: 127.0.0.1:52524
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:07:02
+Client IP-Adress: 127.0.0.1:52525
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:09:40
+Client IP-Adress: 127.0.0.1:52722
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:09:41
+Client IP-Adress: 127.0.0.1:52723
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:09:44
+Client IP-Adress: 127.0.0.1:52725
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:23:24
+Client IP-Adress: 127.0.0.1:52901
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:23:24
+Client IP-Adress: 127.0.0.1:52902
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:23:28
+Client IP-Adress: 127.0.0.1:52938
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:25:48
+Client IP-Adress: 127.0.0.1:53055
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:25:49
+Client IP-Adress: 127.0.0.1:53056
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:25:57
+Client IP-Adress: 127.0.0.1:53061
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:26:40
+Client IP-Adress: 127.0.0.1:53156
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:27:02
+Client IP-Adress: 127.0.0.1:53163
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:27:18
+Client IP-Adress: 127.0.0.1:53164
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:32:02
+Client IP-Adress: 127.0.0.1:53289
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:32:03
+Client IP-Adress: 127.0.0.1:53294
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:32:15
+Client IP-Adress: 127.0.0.1:53295
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:45:25
+Client IP-Adress: 127.0.0.1:53463
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:45:26
+Client IP-Adress: 127.0.0.1:53464
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 12:45:41
+Client IP-Adress: 127.0.0.1:53469
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:00:21
+Client IP-Adress: 127.0.0.1:53787
+GET /login.html HTTP/1.1
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:00:31
+Client IP-Adress: 127.0.0.1:53888
+GET /login.html HTTP/1.1
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:00:51
+Client IP-Adress: 127.0.0.1:53970
+GET /login.html HTTP/1.1
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:01:15
+Client IP-Adress: 127.0.0.1:54066
+GET /login.html HTTP/1.1
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:07:12
+Client IP-Adress: 127.0.0.1:54317
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:07:14
+Client IP-Adress: 127.0.0.1:54322
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:07:26
+Client IP-Adress: 127.0.0.1:54325
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=123&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:08:26
+Client IP-Adress: 127.0.0.1:54398
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:08:35
+Client IP-Adress: 127.0.0.1:54403
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:08:46
+Client IP-Adress: 127.0.0.1:54404
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=222&password=666&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:15:41
+Client IP-Adress: 127.0.0.1:54568
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:15:43
+Client IP-Adress: 127.0.0.1:54573
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:15:50
+Client IP-Adress: 127.0.0.1:54574
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 39
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=qwe&password=qwwww&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:17:15
+Client IP-Adress: 127.0.0.1:54670
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:17:16
+Client IP-Adress: 127.0.0.1:54676
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:17:26
+Client IP-Adress: 127.0.0.1:54682
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=555&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:18:59
+Client IP-Adress: 127.0.0.1:54774
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:19:02
+Client IP-Adress: 127.0.0.1:54779
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:19:09
+Client IP-Adress: 127.0.0.1:54783
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 36
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=13&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:20:46
+Client IP-Adress: 127.0.0.1:54881
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:20:51
+Client IP-Adress: 127.0.0.1:54882
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:21:17
+Client IP-Adress: 127.0.0.1:54891
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=ddd&Login=Login
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:58:43
+Client IP-Adress: 127.0.0.1:55304
+GET /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 13:58:44
+Client IP-Adress: 127.0.0.1:55305
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+/################# End Logging ####################\
+/################# Start Logging ####################\
+Date and Time: 2017-04-09 14:01:16
+Client IP-Adress: 127.0.0.1:55323
+POST /login.html HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:13000
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://127.0.0.1:13000/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+
+username=123&password=222&Login=Login
 /################# End Logging ####################\
