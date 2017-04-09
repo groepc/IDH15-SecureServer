@@ -80,10 +80,10 @@
     <None Include="bin\Debug\setup-log" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
+    <None Include="view\admin\index.html" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="view\login.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\log.txt" />
@@ -96,7 +96,9 @@
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
-    <Content Include="view\index.html" />
+    <Content Include="view\error\400.html" />
+    <Content Include="view\error\404.html" />
+    <Content Include="view\error\500.html" />
     <Content Include="view\settings.html" />
   </ItemGroup>
   <ItemGroup>

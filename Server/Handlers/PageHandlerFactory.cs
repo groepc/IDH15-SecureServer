@@ -24,10 +24,10 @@ namespace Server.request
 
             switch (path.ToLowerInvariant())
             {
-                case "/login.html":
+                case "/admin/index.html":
                     return new LoginHandler();
-                case "webserverconfig":
-                    return new WebserverconfigHandler();
+//                case "webserverconfig":
+//                    return new WebserverconfigHandler();
 
             }
 
