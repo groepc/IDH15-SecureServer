@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="App.config.example" />
     <None Include="bin\Debug\Server.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.manifest" />
