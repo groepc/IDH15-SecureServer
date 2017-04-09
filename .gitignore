@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 Server/App.config
 .idea
+/Server/setup-log/log.txt
