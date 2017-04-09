@@ -1,49 +1,63 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
+﻿using Server.entities;
+using System;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.utils
 {
-    class Authentication
+    public class Authentication
     {
 
+        public static string[] Role { get; }
+        private readonly Encoding hashEncoding;
+        private readonly HashAlgorithm hashAlgorithm;
+        private readonly UserHelper _userHelper;
+
+        public Authentication(UserHelper userHelper)
+        {            
+            hashEncoding = Encoding.UTF8;
+            hashAlgorithm = HashAlgorithm.Create("SHA-512");
+            _userHelper = userHelper;
+        }
+
+        static Authentication()
+        {
+            Role = new[]
+            {
+                "ondersteuners",
+                "beheerders"
+            };
+        }
 
         // Authenticates a user and writes a response cookie containing the token of the login session.
-        public static bool AuthenticateUser(string username, string password, MyFile response)
+        public bool AuthenticateUser(string username, string password)
         {
-            int userId = 0;
-            string constr = ConfigurationManager.ConnectionStrings["logindb"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
+            User user = _userHelper.GetByName(username);
+
+            if (user != null)
             {
-                using (SqlCommand cmd = new SqlCommand("Validate_User"))
+                string hash = CreatePasswordhash(username, password, user.Passwordsalt);
+
+                if (hash == user.Passwordhash)
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password);
-                    cmd.Connection = con;
-                    con.Open();
-                    userId = Convert.ToInt32(cmd.ExecuteScalar());
-                    con.Close();
-                }
-                switch (userId)
-                {
-                    case -1:
-                        //message = "Username and/or password is incorrect.";
-                        break;
-                    case -2:
-                        //FailureText = "Account has not been activated.";
-                        break;
-                    default:
-                        //FormsAuthentication.RedirectFromLoginPage(UserName, RememberMeSet);
-                        break;
+                    //string sessionToken = Guid.NewGuid().ToString("N");
+                    //_sessionCache.Set($"SessionUser_{sessionToken}", user, new CacheItemPolicy { SlidingExpiration = TimeSpan.FromMinutes(20D) });
+                    //response.Headers["Set-Cookie"] = $"sessionToken={sessionToken}";
+
+                    return true;
                 }
             }
-            return true;
+
+            return false;
+        }
+
+        // Creates a base64 password hash
+        private string CreatePasswordhash(string username, string password, string salt)
+        {
+            string input = $"{username}|{password}|{salt}";
+            byte[] inputBytes = hashEncoding.GetBytes(input);
+            byte[] hashBytes = hashAlgorithm.ComputeHash(inputBytes);
+            return Convert.ToBase64String(hashBytes);
         }
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="response\DirectoryList.cs" />
     <Compile Include="response\HtmlPage.cs" />
     <Compile Include="response\Error.cs" />
+    <Compile Include="utils\UserHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

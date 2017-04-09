@@ -1,4 +1,5 @@
 ﻿using Server.Handlers;
+using Server.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,16 @@ namespace Server.request
 {
     public class PageHandlerFactory
     {
+        private readonly UserHelper _userHelper;
+        private readonly Authentication _authentication;
 
-        public PageHandlerFactory()
+        public PageHandlerFactory(UserHelper userhelper, Authentication authentication)
         {
-
+            _userHelper = userhelper;
+            _authentication = authentication;
         }
 
-        public static IPageHandler Create(string path)
+        public IPageHandler Create(string path)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -25,7 +29,7 @@ namespace Server.request
             switch (path.ToLowerInvariant())
             {
                 case "/admin/index.html":
-                    return new LoginHandler();
+                    return new LoginHandler(_authentication);
                 case "/admin/settings.html":
                     return new WebserverconfigHandler();
             }
