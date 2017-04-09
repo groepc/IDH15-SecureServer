@@ -16,5 +16,10 @@ namespace Server.response
 			content = status + " " + ResponseCodes.getMessage(status) + ":\r\n";
 
 		}
+
+	    public string getHtmlPath(string docroot)
+	    {
+	        return  docroot + "/error/" + this.status + ".html";
+	    }
 	}
 }

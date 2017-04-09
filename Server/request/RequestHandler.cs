@@ -81,15 +81,18 @@ namespace Server.request
             }
             catch (BadRequestException e)
 			{
-				writeString((new Error(400)).getHtmlPage(), 400);
+			    myfile = new MyFile((new Error(400)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+			    writeFile(myfile, 400);
 			}
 			catch (FileNotFoundException e)
 			{
-				writeString((new Error(404)).getHtmlPage(), 404);
+			    myfile = new MyFile((new Error(404)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+			    writeFile(myfile, 404);
 			}
 			catch (IOException e)
 			{
-				writeString((new Error(500)).getHtmlPage(), 500);
+			    myfile = new MyFile((new Error(500)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+			    writeFile(myfile, 500);
 			}
 
             if (myfile != null)

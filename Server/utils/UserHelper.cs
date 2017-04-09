@@ -33,8 +33,7 @@ namespace Server.utils
                 {
                     try
                     {
-
-                        using (SqlCommand cmd = new SqlCommand("SELECT Id, Name, PasswordHash, PasswordSalt, Role FROM [User] WHERE Name = @Username"))
+                        using (SqlCommand cmd = new SqlCommand("SELECT Id, Name, PasswordHash, PasswordSalt, Role FROM [users] WHERE Name = @Username"))
                         {
                             cmd.Transaction = conTrans;
 
