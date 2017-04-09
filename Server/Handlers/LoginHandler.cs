@@ -1,12 +1,8 @@
 ﻿using Server.request;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 using Server.utils;
+using System;
 using System.Configuration;
+using System.Net;
 
 namespace Server.Handlers
 {
@@ -21,7 +17,22 @@ namespace Server.Handlers
 
         public MyFile HandlePost(Request request, string requestedFile)
         {
-            throw new NotImplementedException();
+            string username = request.formdata;
+            //string password = request.FormData["Password"];
+
+            MyFile myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + "/settings.html");
+            Authentication.AuthenticateUser("Mieke", "123", myfile);
+
+            //if ()
+            //{
+
+            //}
+            //else
+            // {
+            //    throw new Exception();
+            //}
+           
+            return myfile;
         }
     }
 }

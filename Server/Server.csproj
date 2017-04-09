@@ -48,22 +48,23 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\LoginHandler.cs" />
-    <Compile Include="Handlers\WebserverconfigHandler.cs" />
+    <Compile Include="entities\User.cs" />
+    <Compile Include="handlers\LoginHandler.cs" />
+    <Compile Include="handlers\WebserverconfigHandler.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="request\BadRequestException.cs" />
-    <Compile Include="Handlers\IPageHandler.cs" />
-    <Compile Include="Handlers\PageHandlerFactory.cs" />
+    <Compile Include="handlers\IPageHandler.cs" />
+    <Compile Include="handlers\PageHandlerFactory.cs" />
     <Compile Include="request\Request.cs" />
     <Compile Include="request\RequestHandler.cs" />
     <Compile Include="response\ResponseCodes.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="utils\Authentication.cs" />
     <Compile Include="utils\Logging.cs" />
-    <Compile Include="utils\Login.cs" />
     <Compile Include="utils\MyFile.cs" />
     <Compile Include="utils\FileProcessor.cs" />
     <Compile Include="response\DirectoryList.cs" />
@@ -88,8 +89,6 @@
     <Content Include="bin\Debug\Server.exe" />
     <Content Include="bin\Debug\Server.pdb" />
     <Content Include="bin\Debug\Server.vshost.exe" />
-    <Content Include="bin\Debug\WebClient.dll" />
-    <Content Include="bin\Debug\WebClient.pdb" />
     <Content Include="obj\Debug\Server.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Server.exe" />
     <Content Include="obj\Debug\Server.pdb" />

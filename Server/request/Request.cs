@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
+﻿using System.IO;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using Server.utils;
+using System.Collections.Specialized;
+using System;
+using System.Web;
+using System.Linq;
 
 namespace Server.request
 {
     public class Request
     {
-        public string line, command, path, protocol;
-
+        public string line, command, path, protocol, formdata;
+        
         public Request(NetworkStream socket_in, string remoteIpEndPoint)
         {
             // Strings lezen gaat het gemakkelijkst via een BufferedReader
@@ -27,8 +26,8 @@ namespace Server.request
 
             // Lees de rest van de request header
             while (read.Peek() > -1)
-            {
-                logging.LogWrite(read.ReadLine());
+            {            
+                    logging.LogWrite(read.ReadLine());
             }
 
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
@@ -48,15 +47,20 @@ namespace Server.request
             {
                 throw (new BadRequestException("Unknown request: " + command));
             }
+
+            if (command.Equals("POST"))
+            {
+                string formdata = Logging.ReadFormdata();
+            }
+
             logging.LogEnd();
-        
-			readGetVariables(line);
+            readGetVariables(line);
         }
 
 		protected void readGetVariables(string line)
 		{
-			System.Console.Write(line);
-		}
+			Console.Write(line);
+        }
 
         //@Override
         public string toString()
@@ -77,6 +81,11 @@ namespace Server.request
         public string getProtocol()
         {
             return protocol;
+        }
+
+        public string getFormData()
+        {
+            return formdata;
         }
     }
 }
