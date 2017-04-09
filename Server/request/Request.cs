@@ -4,6 +4,7 @@ using System.Text;
 using Server.utils;
 using System.Collections.Specialized;
 using System;
+using System.Collections.Generic;
 using System.Web;
 using System.Linq;
 
@@ -12,6 +13,7 @@ namespace Server.request
     public class Request
     {
         public string line, command, path, protocol, formdata;
+        public List<string> rawRequest = new List<string>();
         
         public Request(NetworkStream socket_in, string remoteIpEndPoint)
         {
@@ -26,8 +28,9 @@ namespace Server.request
 
             // Lees de rest van de request header
             while (read.Peek() > -1)
-            {            
-                    logging.LogWrite(read.ReadLine());
+            {
+//                this.rawRequest.Add(read.ReadLine());
+                logging.LogWrite(read.ReadLine());
             }
 
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
@@ -39,9 +42,9 @@ namespace Server.request
                 throw (new BadRequestException("Syntax error in request: " + line));
             }
 
-            command = parts[0];
-            path = parts[1];
-            protocol = parts[2];
+            this.command = parts[0];
+            this.path = parts[1];
+            this.protocol = parts[2];
 
 			if (!command.Equals("GET") && !command.Equals("POST"))
             {
@@ -50,7 +53,7 @@ namespace Server.request
 
             if (command.Equals("POST"))
             {
-                string formdata = Logging.ReadFormdata();
+                this.formdata = Logging.ReadFormdata();
             }
 
             logging.LogEnd();

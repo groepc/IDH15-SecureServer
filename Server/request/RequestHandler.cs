@@ -37,12 +37,12 @@ namespace Server.request
 
                 string actualPath = request.path;
                 IPageHandler pageHandler = PageHandlerFactory.Create(actualPath);
-
-                // Map and parse the relative path to get the actual file info
-                string requestedFile = ConfigurationManager.AppSettings.Get("webroot") + actualPath;
     
                 if (pageHandler != null)
                 {
+                    // Map and parse the relative path to get the actual file info
+                    string requestedFile = ConfigurationManager.AppSettings.Get("configpath") + actualPath;
+
                     switch (request.command)
                     {
                         case "GET":
@@ -72,30 +72,30 @@ namespace Server.request
 			}
 			catch (BadRequestException e)
 			{
-				writeString((new Error(400)).getHtmlPage());
+				writeString((new Error(400)).getHtmlPage(), 400);
 			}
 			catch (FileNotFoundException e)
 			{
-				writeString((new Error(404)).getHtmlPage());
+				writeString((new Error(404)).getHtmlPage(), 404);
 			}
 			catch (IOException e)
 			{
-				writeString((new Error(500)).getHtmlPage());
+				writeString((new Error(500)).getHtmlPage(), 500);
 			}
 			
 			myfile.Close();
 		}
 
-		private void writeString(String content)
+		private void writeString(String content, int statusCode = 200)
 		{
 			byte[] buffer = Encoding.ASCII.GetBytes(content);
-			writeHeader(200, "text/html", buffer.Length);
+			writeHeader(statusCode, "text/html", buffer.Length);
 			write(buffer);
 		}
 
-		private void writeFile(MyFile myfile)
+		private void writeFile(MyFile myfile, int statusCode = 200)
 		{
-			writeHeader(200, myfile.GetContentType(), myfile.GetLength());
+			writeHeader(statusCode, myfile.GetContentType(), myfile.GetLength());
 			byte[] buffer = new byte[1024];
 			while (myfile.Read(buffer, buffer.Length) > 0)
 			{
