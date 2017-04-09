@@ -49,7 +49,7 @@ namespace Server.request
                             myfile = pageHandler.HandleGet(request, requestedFile);
                             break;
                         case "POST":
-                            myfile = pageHandler.HandlePost(request, requestedFile);
+                            pageHandler.HandlePost(request, requestedFile);
                             break;
                     }
                 }
@@ -70,7 +70,11 @@ namespace Server.request
 					writeFile(myfile);
                 }
 			}
-			catch (BadRequestException e)
+            catch (RedirectException e)
+            {
+                writeRedirectString(e.getPath(), 302);
+            }
+            catch (BadRequestException e)
 			{
 				writeString((new Error(400)).getHtmlPage(), 400);
 			}
@@ -82,25 +86,38 @@ namespace Server.request
 			{
 				writeString((new Error(500)).getHtmlPage(), 500);
 			}
-			
-			myfile.Close();
+
+            if (myfile != null)
+            {
+                myfile.Close();
+            }
 		}
 
 		private void writeString(String content, int statusCode = 200)
 		{
 			byte[] buffer = Encoding.ASCII.GetBytes(content);
-			writeHeader(statusCode, "text/html", buffer.Length);
+
+            writeHeader(statusCode, "text/html", buffer.Length);     
+         
 			write(buffer);
 		}
 
+        private void writeRedirectString(string path, int statusCode = 302)
+        {
+            writeRedirectHeader(statusCode, path);
+        }
+
 		private void writeFile(MyFile myfile, int statusCode = 200)
 		{
-			writeHeader(statusCode, myfile.GetContentType(), myfile.GetLength());
+            writeHeader(statusCode, myfile.GetContentType(), myfile.GetLength());
+    
 			byte[] buffer = new byte[1024];
+
 			while (myfile.Read(buffer, buffer.Length) > 0)
 			{
 				write(buffer);
 			}
+
 			myfile.Close();
 		}
 
@@ -113,6 +130,14 @@ namespace Server.request
 			write("Connection: close " + contentLength + "\r\n");
 			write("\r\n"); // altijd met een lege regel eindigen
 		}
+
+        private void writeRedirectHeader(int status, string path)
+        {
+            string message = ResponseCodes.getMessage(status);
+            write("HTTP/1.0 " + status + " " + message + "\r\n");
+            write("Location: " + path + "\r\n");
+            write("\r\n"); // altijd met een lege regel eindigen
+        }
 
 		private void write(string text)
 		{

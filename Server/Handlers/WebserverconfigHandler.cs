@@ -13,10 +13,11 @@ namespace Server.Handlers
     {
         public MyFile HandleGet(Request request, string requestedFile)
         {
-            throw new NotImplementedException();
+            MyFile myfile = new MyFile(requestedFile);
+            return myfile;
         }
 
-        public MyFile HandlePost(Request request, string requestedFile)
+        public void HandlePost(Request request, string requestedFile)
         {
             throw new NotImplementedException();
         }

@@ -29,7 +29,6 @@ namespace Server.request
             // Lees de rest van de request header
             while (read.Peek() > -1)
             {
-//                this.rawRequest.Add(read.ReadLine());
                 logging.LogWrite(read.ReadLine());
             }
 
@@ -51,11 +50,13 @@ namespace Server.request
                 throw (new BadRequestException("Unknown request: " + command));
             }
 
+            formdata = null;
             if (command.Equals("POST"))
             {
                 this.formdata = Logging.ReadFormdata();
             }
 
+            getFormData();
             logging.LogEnd();
             readGetVariables(line);
         }

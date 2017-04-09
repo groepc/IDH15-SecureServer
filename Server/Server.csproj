@@ -59,6 +59,7 @@
     <Compile Include="request\BadRequestException.cs" />
     <Compile Include="handlers\IPageHandler.cs" />
     <Compile Include="handlers\PageHandlerFactory.cs" />
+    <Compile Include="request\RedirectException.cs" />
     <Compile Include="request\Request.cs" />
     <Compile Include="request\RequestHandler.cs" />
     <Compile Include="response\ResponseCodes.cs" />
@@ -73,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="App.config.example" />
     <None Include="bin\Debug\Server.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.config" />
     <None Include="bin\Debug\Server.vshost.exe.manifest" />
@@ -83,7 +83,6 @@
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="view\login.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\log.txt" />
@@ -96,8 +95,7 @@
     <Content Include="setup-log\log.txt">
       <SubType>Component</SubType>
     </Content>
-    <Content Include="view\index.html" />
-    <Content Include="view\settings.html" />
+    <Content Include="view\admin\settings.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

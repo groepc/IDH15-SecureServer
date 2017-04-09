@@ -9,30 +9,19 @@ namespace Server.Handlers
     public class LoginHandler : IPageHandler
     {
         public MyFile HandleGet(Request request, string requestedFile)
-        {
-               
+        {            
             MyFile myfile = new MyFile(requestedFile);
             return myfile;
         }
 
-        public MyFile HandlePost(Request request, string requestedFile)
+        public void HandlePost(Request request, string requestedFile)
         {
-            string username = request.formdata;
-            //string password = request.FormData["Password"];
 
-            MyFile myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + "/settings.html");
-            Authentication.AuthenticateUser("Mieke", "123", myfile);
+            string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":" 
+                + ConfigurationManager.AppSettings.Get("webport") + "/admin/settings.html";
 
-            //if ()
-            //{
-
-            //}
-            //else
-            // {
-            //    throw new Exception();
-            //}
+            throw new RedirectException(path);
            
-            return myfile;
         }
     }
 }
