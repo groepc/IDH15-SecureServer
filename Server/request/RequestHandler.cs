@@ -144,7 +144,7 @@ namespace Server.request
             string message = ResponseCodes.getMessage(status);
             write("HTTP/1.0 " + status + " " + message + "\r\n");
             write("Location: " + path + "\r\n");
-            write("\r\n"); // altijd met een lege regel eindigen
+            //write("\r\n"); // altijd met een lege regel eindigen
         }
 
 		private void write(string text)

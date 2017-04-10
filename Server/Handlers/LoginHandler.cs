@@ -31,10 +31,10 @@ namespace Server.Handlers
             string username = parts[0].Substring(parts[0].IndexOf('=') + 1); 
             string password = parts[1].Substring(parts[0].IndexOf('=') + 1);
 
-            if (!_authentication.AuthenticateUser(username, password))
+            if (_authentication.AuthenticateUser(username, password) == false)
             {
                 string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/login.html";
+                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/index.html";
 
                 throw new RedirectException(path);
             }
