@@ -134,7 +134,7 @@ namespace Server.request
 
                 using (Stream content = new MemoryStream())
                 {
-                    inputStream.CopyTo(content);
+                    inputStream.CopyTo(content, 0, contentLength);
 
                     // Read and parse formdata if the body contains formdata
                     formData = ParseFormData(headers, content);

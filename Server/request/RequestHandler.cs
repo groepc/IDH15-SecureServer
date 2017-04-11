@@ -9,9 +9,9 @@ using System.Net;
 
 namespace Server.request
 {
-    public class RequestHandler : TcpClient
+    public class RequestHandler
     {
-        private TcpClient socket;
+        private NetworkStream socket;
         private NetworkStream socket_in;
         private NetworkStream socket_out;
         private Request request;
@@ -20,9 +20,10 @@ namespace Server.request
         private readonly Authentication _authentication;
         private readonly PageHandlerFactory _pageHandlerFactory;
 
-        public RequestHandler(TcpClient socket)
+        public RequestHandler(NetworkStream socket, IPEndPoint endpoint)
 		{
 			this.socket = socket;
+		    this.remoteIpEndPoint = endpoint;
 
             UserHelper userHelper = new UserHelper();
             _authentication = new Authentication(userHelper);
@@ -34,9 +35,8 @@ namespace Server.request
 			MyFile myfile = null;
             try
             {
-                socket_in = socket.GetStream();
-                socket_out = socket.GetStream();
-                remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
+                socket_in = socket;
+                socket_out = socket;
 
                 request = new Request(socket_in, remoteIpEndPoint.ToString());
 

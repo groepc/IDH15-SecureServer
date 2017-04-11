@@ -10,28 +10,39 @@ namespace Server
 {
     public class Server
     {
-        private TcpListener listenSocket;
+        private Socket listenSocket;
 
         //comment
         public Server()
         {
-            
+
 
             Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("webport"));
             IPAddress localAddr = IPAddress.Parse(ConfigurationManager.AppSettings.Get("ipadress"));
-            listenSocket = new TcpListener(localAddr, port);
-            listenSocket.Start();
+
+            IPEndPoint endPoint = new IPEndPoint(localAddr, port);
+            listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            listenSocket.Bind(endPoint);
+
+            Thread listenerThread = new Thread(Start);
+            listenerThread.Start();
+
         }
 
         public void Start()
         {
+
+            listenSocket.Listen(int.MaxValue);
+
             try
             {
+                Socket communicationSocket;
+
                 while (true)
                 {
                     // De blocking call is de accept-methode: Een request
                     // vanuit een browser resulteert hier in een communicatiesocket
-                    TcpClient communicationSocket = listenSocket.AcceptTcpClient();
+                    communicationSocket = listenSocket.Accept();
 
                     // When a new client is connected, handle the request on a new thread
                     Thread requestThread = new Thread(OnRequest)
@@ -40,11 +51,9 @@ namespace Server
                     };
 
                     requestThread.Start(communicationSocket);
-
-
-                    // En ga onmiddleijk klaar staan voor het volgende request
-//                     communicationSocket.Close();
                 }
+
+                communicationSocket.Close();
             }
             catch (IOException e)
             {
@@ -57,15 +66,18 @@ namespace Server
         {
             try
             {
-                using (TcpClient clientSocket = (TcpClient) clientSocketObj)
+                using (Socket clientSocket = (Socket) clientSocketObj)
                 {
+                    IPEndPoint endPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
 
-                    Console.WriteLine("Start RequestHandler");
+                    using (NetworkStream networkStream = new NetworkStream(clientSocket))
+                    {
+                        Console.WriteLine("Start RequestHandler");
 
-                    // Start een handler met deze socket
-                    RequestHandler handler = new RequestHandler(clientSocket);
-                    handler.Run();
-
+                        // Start een handler met deze socket
+                        RequestHandler handler = new RequestHandler(networkStream, endPoint);
+                        handler.Run();
+                    }
                 }
             }
             catch (Exception e)
