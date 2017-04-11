@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entities\User.cs" />
+    <Compile Include="extensions\StreamExtensions.cs" />
     <Compile Include="handlers\LoginHandler.cs" />
     <Compile Include="handlers\WebserverconfigHandler.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />

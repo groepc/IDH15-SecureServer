@@ -25,29 +25,20 @@ namespace Server.Handlers
 
         public void HandlePost(Request request, string requestedFile)
         {
+            string username = request.formData["Username"];
+            string password = request.formData["Password"];
 
-            // @TODO: postdata in username/password variabele zetten
-
-//            string[] parts = null;
-//            parts = SplitFormdata(request.formdata);
-//
-//            string username = parts[0].Substring(parts[0].IndexOf('=') + 1);
-//            string password = parts[1].Substring(parts[0].IndexOf('=') + 1);
-
-            string username = "hello";
-            string password = "world";
-
-            if (_authentication.AuthenticateUser(username, password) == false)
+            if (_authentication.AuthenticateUser(username, password))
             {
                 string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/index.html";
+                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/settings.html";
 
                 throw new RedirectException(path);
             }
             else
             {
                 string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/settings.html";
+                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/index.html";
 
                 throw new RedirectException(path);
             }
