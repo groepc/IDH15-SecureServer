@@ -15,6 +15,8 @@ namespace Server
         //comment
         public Server()
         {
+            
+
             Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("webport"));
             IPAddress localAddr = IPAddress.Parse(ConfigurationManager.AppSettings.Get("ipadress"));
             listenSocket = new TcpListener(localAddr, port);
@@ -41,7 +43,7 @@ namespace Server
 
 
                     // En ga onmiddleijk klaar staan voor het volgende request
-                    // communicationSocket.Close();
+//                     communicationSocket.Close();
                 }
             }
             catch (IOException e)

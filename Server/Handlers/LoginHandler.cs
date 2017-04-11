@@ -25,11 +25,17 @@ namespace Server.Handlers
 
         public void HandlePost(Request request, string requestedFile)
         {
-            string[] parts = null;
-            parts = SplitFormdata(request.formdata);
 
-            string username = parts[0].Substring(parts[0].IndexOf('=') + 1); 
-            string password = parts[1].Substring(parts[0].IndexOf('=') + 1);
+            // @TODO: postdata in username/password variabele zetten
+
+//            string[] parts = null;
+//            parts = SplitFormdata(request.formdata);
+//
+//            string username = parts[0].Substring(parts[0].IndexOf('=') + 1);
+//            string password = parts[1].Substring(parts[0].IndexOf('=') + 1);
+
+            string username = "hello";
+            string password = "world";
 
             if (_authentication.AuthenticateUser(username, password) == false)
             {

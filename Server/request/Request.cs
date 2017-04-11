@@ -7,77 +7,42 @@ using System;
 using System.Collections.Generic;
 using System.Web;
 using System.Linq;
+using Server.request;
 
 namespace Server.request
 {
     public class Request
     {
-        public string line, command, path, protocol, formdata;
+        public string line, command, path, protocol;
+        public NameValueCollection formData;
         public List<string> rawRequest = new List<string>();
+        public RequestMessage requestMessage = null;
         
         public Request(NetworkStream socket_in, string remoteIpEndPoint)
         {
-            // Strings lezen gaat het gemakkelijkst via een BufferedReader
-            TextReader read = new StreamReader(socket_in, Encoding.UTF8);
-            // Lees de eerste regel, bijvoorbeeld "GET index.php HTTP/1.1"
-            line = read.ReadLine();
 
             Logging logging = new Logging();
             logging.LogStart(remoteIpEndPoint);
-            logging.LogWrite(line.ToString());
 
-            //@TODO: PostData parsen en opslaan in globale variabel
+            requestMessage = RequestMessage.Create(socket_in);
+
             //@TODO: Logging opnieuw instellen
 
-//            try
-//            {
-//                // Lees de rest van de request header
-//                while (read.Peek() > -1)
-//                {
-//                    string tempString = read.ReadLine();
-//                    Console.WriteLine(tempString);
-//                    logging.LogWrite(tempString);
-//                }
-//            }
-//            catch (Exception e)
-//            {
-//                Console.WriteLine(e);
-//            }
-
-
-
-            // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
-            // (de browser moet spaties in het derde deel netjes door %20 vervangen)
-            string[] parts = line.Split(' ');
-
-            if (parts.Length != 3)
-            {
-                throw (new BadRequestException("Syntax error in request: " + line));
-            }
-
-            this.command = parts[0];
-            this.path = parts[1];
-            this.protocol = parts[2];
+            this.command = this.requestMessage.HttpMethod;
+            this.path = "/" + this.requestMessage.Path;
+            this.protocol = this.requestMessage.HttpVersion;
 
 			if (!command.Equals("GET") && !command.Equals("POST"))
             {
                 throw (new BadRequestException("Unknown request: " + command));
             }
 
-            formdata = null;
             if (command.Equals("POST"))
             {
-                this.formdata = Logging.ReadFormdata();
+                this.formData = this.requestMessage.FormData;
             }
 
-            getFormData();
             logging.LogEnd();
-            readGetVariables(line);
-        }
-
-		protected void readGetVariables(string line)
-		{
-			Console.Write(line);
         }
 
         //@Override
@@ -99,11 +64,6 @@ namespace Server.request
         public string getProtocol()
         {
             return protocol;
-        }
-
-        public string getFormData()
-        {
-            return formdata;
         }
     }
 }

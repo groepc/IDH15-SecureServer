@@ -62,6 +62,7 @@
     <Compile Include="request\RedirectException.cs" />
     <Compile Include="request\Request.cs" />
     <Compile Include="request\RequestHandler.cs" />
+    <Compile Include="request\RequestMessage.cs" />
     <Compile Include="response\ResponseCodes.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="utils\Authentication.cs" />
