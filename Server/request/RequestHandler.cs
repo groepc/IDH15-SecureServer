@@ -33,6 +33,7 @@ namespace Server.request
 		public void Run()
         {
 			MyFile myfile = null;
+			String HtmlPage = null;
             try
             {
                 socket_in = socket;
@@ -51,7 +52,7 @@ namespace Server.request
                     switch (request.command)
                     {
                         case "GET":
-                            myfile = _pageHandler.HandleGet(request, requestedFile);
+							HtmlPage = _pageHandler.HandleGet(request, requestedFile);
                             break;
                         case "POST":
                             _pageHandler.HandlePost(request, requestedFile);
@@ -63,9 +64,9 @@ namespace Server.request
                     myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
                 }
 
-                System.Console.WriteLine(myfile.indexPageExists());
+                //System.Console.WriteLine(myfile.indexPageExists());
 
-                if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
+				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && ( myfile != null && myfile.indexPageExists() == true))
                 {
                     HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"),
                         request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
@@ -73,7 +74,13 @@ namespace Server.request
                 }
                 else
                 {
-                    writeFile(myfile);
+					if (HtmlPage is string) { 
+						writeString(HtmlPage);
+					}
+					else
+					{
+						writeFile(myfile);
+					}
                 }
             }
             catch (RedirectException e)

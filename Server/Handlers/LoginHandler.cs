@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net;
+using Server.response.admin;
 
 namespace Server.Handlers
 {
-    public class LoginHandler : IPageHandler
+	public class LoginHandler : IPageHandler
     {
         private readonly Authentication _authentication;
 
@@ -17,10 +18,9 @@ namespace Server.Handlers
             _authentication = authentication;
         }
 
-        public MyFile HandleGet(Request request, string requestedFile)
+        public string HandleGet(Request request, string requestedFile)
         {
-            MyFile myfile = new MyFile(requestedFile);
-            return myfile;
+			return (new IndexPage()).getHtmlPage();
         }
 
         public void HandlePost(Request request, string requestedFile)
@@ -49,5 +49,6 @@ namespace Server.Handlers
             string[] parts = formdata.Split('&');
             return parts;
         }
+	
     }
 }

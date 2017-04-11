@@ -1,20 +1,14 @@
 ﻿using Server.request;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Server.utils;
-using System.IO;
+using Server.response.admin;
 
 namespace Server.Handlers
 {
     public class WebserverconfigHandler : IPageHandler
     {
-        public MyFile HandleGet(Request request, string requestedFile)
+        public String HandleGet(Request request, string requestedFile)
         {
-            MyFile myfile = new MyFile(requestedFile);
-            return myfile;
+            return (new WebserverConfigPage()).getHtmlPage();
         }
 
         public void HandlePost(Request request, string requestedFile)

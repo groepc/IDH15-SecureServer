@@ -25,8 +25,7 @@ namespace Server.request
             logging.LogStart(remoteIpEndPoint);
 
             requestMessage = RequestMessage.Create(socket_in);
-
-            //@TODO: Logging opnieuw instellen
+			logging.LogWrite(requestMessage.RawHeader);
 
             this.command = this.requestMessage.HttpMethod;
             this.path = "/" + this.requestMessage.Path;

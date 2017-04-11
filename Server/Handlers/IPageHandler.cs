@@ -10,7 +10,7 @@ namespace Server.request
 {
     public interface IPageHandler
     {
-        MyFile HandleGet(Request request, string requestedFile);
+        String HandleGet(Request request, string requestedFile);
         void HandlePost(Request request, string requestedFile);
     }
 }

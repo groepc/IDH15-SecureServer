@@ -1,7 +1,7 @@
 ﻿
 namespace Server
 {
-	class HtmlPage
+	public abstract class HtmlPage
 	{
 		protected string content;
 
