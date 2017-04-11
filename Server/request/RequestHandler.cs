@@ -32,17 +32,17 @@ namespace Server.request
 		public void Run()
         {
 			MyFile myfile = null;
-			try
+            try
             {
                 socket_in = socket.GetStream();
-				socket_out = socket.GetStream();
+                socket_out = socket.GetStream();
                 remoteIpEndPoint = socket.Client.RemoteEndPoint as IPEndPoint;
 
                 request = new Request(socket_in, remoteIpEndPoint.ToString());
 
                 string actualPath = request.path;
                 IPageHandler _pageHandler = _pageHandlerFactory.Create(actualPath);
-    
+
                 if (_pageHandler != null)
                 {
                     // Map and parse the relative path to get the actual file info
@@ -60,40 +60,45 @@ namespace Server.request
                 }
                 else
                 {
-					myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
-				}
-
-				System.Console.WriteLine(myfile.indexPageExists());
-
-				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
-				{
-					HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"), request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
-					writeString(directoryList.getHtmlPage());
-				}
-				else
-				{
-					writeFile(myfile);
+                    myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
                 }
-			}
+
+                System.Console.WriteLine(myfile.indexPageExists());
+
+                if (ConfigurationManager.AppSettings.Get("dbon") == "true" && myfile.indexPageExists() == true)
+                {
+                    HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"),
+                        request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
+                    writeString(directoryList.getHtmlPage());
+                }
+                else
+                {
+                    writeFile(myfile);
+                }
+            }
             catch (RedirectException e)
             {
                 writeRedirectString(e.getPath(), 302);
             }
             catch (BadRequestException e)
-			{
-			    myfile = new MyFile((new Error(400)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
-			    writeFile(myfile, 400);
-			}
-			catch (FileNotFoundException e)
-			{
-			    myfile = new MyFile((new Error(404)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
-			    writeFile(myfile, 404);
-			}
-			catch (IOException e)
-			{
-			    myfile = new MyFile((new Error(500)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
-			    writeFile(myfile, 500);
-			}
+            {
+                myfile = new MyFile((new Error(400)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+                writeFile(myfile, 400);
+            }
+            catch (FileNotFoundException e)
+            {
+                myfile = new MyFile((new Error(404)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+                writeFile(myfile, 404);
+            }
+            catch (IOException e)
+            {
+                myfile = new MyFile((new Error(500)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
+                writeFile(myfile, 500);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
             if (myfile != null)
             {
@@ -132,19 +137,19 @@ namespace Server.request
 		private void writeHeader(int status, String contentType, long contentLength)
 		{
 			string message = ResponseCodes.getMessage(status);
-			write("HTTP/1.0 " + status + " " + message + "\r\n");
+			write("HTTP/1.1 " + status + " " + message + "\r\n");
 			write("Content-Type: " + contentType + "\r\n");
 			write("Content-Length: " + contentLength + "\r\n");
-			write("Connection: close " + contentLength + "\r\n");
+			write("Connection: close\r\n");
 			write("\r\n"); // altijd met een lege regel eindigen
 		}
 
         private void writeRedirectHeader(int status, string path)
         {
             string message = ResponseCodes.getMessage(status);
-            write("HTTP/1.0 " + status + " " + message + "\r\n");
+            write("HTTP/1.1 " + status + " " + message + "\r\n");
             write("Location: " + path + "\r\n");
-            //write("\r\n"); // altijd met een lege regel eindigen
+            write("\r\n"); // altijd met een lege regel eindigen
         }
 
 		private void write(string text)

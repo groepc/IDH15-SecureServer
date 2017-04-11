@@ -26,11 +26,25 @@ namespace Server.request
             logging.LogStart(remoteIpEndPoint);
             logging.LogWrite(line.ToString());
 
-            // Lees de rest van de request header
-            while (read.Peek() > -1)
-            {
-                logging.LogWrite(read.ReadLine());
-            }
+            //@TODO: PostData parsen en opslaan in globale variabel
+            //@TODO: Logging opnieuw instellen
+
+//            try
+//            {
+//                // Lees de rest van de request header
+//                while (read.Peek() > -1)
+//                {
+//                    string tempString = read.ReadLine();
+//                    Console.WriteLine(tempString);
+//                    logging.LogWrite(tempString);
+//                }
+//            }
+//            catch (Exception e)
+//            {
+//                Console.WriteLine(e);
+//            }
+
+
 
             // Volgens protocol bestaat regel 1 uit drie delen, gescheiden door spaties.
             // (de browser moet spaties in het derde deel netjes door %20 vervangen)

@@ -31,6 +31,9 @@ namespace Server.utils
         // Authenticates a user and writes a response cookie containing the token of the login session.
         public bool AuthenticateUser(string username, string password)
         {
+
+            // @TODO: Authenticatie controleren
+
             //User user = _userHelper.GetByName(username);
 
             //if (user != null)
