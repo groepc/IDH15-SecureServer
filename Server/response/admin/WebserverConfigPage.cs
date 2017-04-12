@@ -15,7 +15,7 @@ namespace Server.response.admin
             string appWebRoot = ConfigurationManager.AppSettings.Get("webroot");
             string appWebPort = ConfigurationManager.AppSettings.Get("webport");
             string appDefaultPage = ConfigurationManager.AppSettings.Get("defaultPage");
-            bool appDirectoryBrowsing = Convert.ToBoolean(ConfigurationManager.AppSettings.Get("directoryBrowsing"));
+            bool appDirectoryBrowsing = Convert.ToBoolean(ConfigurationManager.AppSettings.Get("dbon"));
             
             content += "<form METHOD=\"POST\" ACTION=\"/admin/settings.html\">\n";
             content += "    <H3>Superserver!</H3>\n";
@@ -36,9 +36,9 @@ namespace Server.response.admin
             content += "            <tr>\n";
             content += "                <td>Directory browsing:</td>\n";
             if (appDirectoryBrowsing) {
-                content += "                <td><INPUT TYPE=\"CHECKBOX\" NAME=\"info\" VALUE=\"dbon\" checked></td>\n";
+                content += "                <td><INPUT TYPE=\"CHECKBOX\" NAME=\"directoryBrowsing\" VALUE=\"dbon\" checked></td>\n";
             } else {
-                content += "                <td><INPUT TYPE=\"CHECKBOX\" NAME=\"info\" VALUE=\"dbon\"></td>\n";
+                content += "                <td><INPUT TYPE=\"CHECKBOX\" NAME=\"directoryBrowsing\" VALUE=\"dbon\"></td>\n";
             }
             content += "            </tr>\n";
             content += "        </table>\n";
