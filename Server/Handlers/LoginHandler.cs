@@ -2,6 +2,7 @@
 using Server.Entities;
 using System.Configuration;
 using Server.response.admin;
+using Server.utils;
 
 namespace Server.Handlers
 {
@@ -27,14 +28,14 @@ namespace Server.Handlers
             if (_authentication.AuthenticateUser(username, password))
             {
                 string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/settings.html";
+                    + AppConfigProcessor.Get().WebPort + "/admin/settings.html";
 
                 throw new RedirectException(path);
             }
             else
             {
                 string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                    + ConfigurationManager.AppSettings.Get("webport") + "/admin/index.html";
+                    + AppConfigProcessor.Get().WebPort + "/admin/index.html";
 
                 throw new RedirectException(path);
             }

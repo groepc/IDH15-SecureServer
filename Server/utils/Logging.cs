@@ -49,13 +49,6 @@ namespace Server.Entities
             }
         }
 
-        public static string ReadFormdata()
-        {
-            string logsDirectory = ConfigurationManager.AppSettings.Get("log");
-            string formdata = File.ReadLines(logsDirectory).Last();
-            return formdata;
-        }
-
         public void LogEnd()
         {
             string logsDirectory = ConfigurationManager.AppSettings.Get("log");

@@ -27,6 +27,8 @@ namespace Server.request
                     return new LoginHandler(_authentication);
                 case "/admin/settings.html":
                     return new WebserverconfigHandler();
+                case "/admin/log.html":
+                    return new LogPageHandler();
             }
 
             return null;

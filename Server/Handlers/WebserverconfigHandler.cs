@@ -25,7 +25,7 @@ namespace Server.Handlers
             AppConfigProcessor.Save();
         
             string path = "http://" + ConfigurationManager.AppSettings.Get("ipadress") + ":"
-                   + ConfigurationManager.AppSettings.Get("webport") + "/admin/settings.html";
+                   + AppConfigProcessor.Get().WebPort + "/admin/settings.html";
             throw new RedirectException(path);
         }
     }

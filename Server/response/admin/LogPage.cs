@@ -14,15 +14,15 @@ namespace Server.response.admin
 		{
 			content += "<div>";
 			content += "    <h3>Log</h3>";
-			content += "<a href=\"settings.html\">Terug naar instellingen</a>";
-			content += "    <div>";
+			content += "    <a href=\"settings.html\">Terug naar instellingen</a>";
+            content += "    <form method='post'>";
+            content += "        <button type=\"submit\" value=\"Login\">Reset log</button>";
+            content += "    </form>";
+            content += "    <div>";
 			content += getLogText();
 			content += "    </div>";
-			content += " <form>";
-			content += "        <button type=\"submit\" value=\"Login\">Reset log<button>";
-			content += "    </p>";
-			content += "</form>";
-		}
+            content += "</div>";
+        }
 
 		protected string getLogText() {
 			return encodeText(File.ReadAllText(ConfigurationManager.AppSettings.Get("log")));

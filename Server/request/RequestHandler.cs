@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Configuration;
 using System.Text;
 using System.Net;
+using Server.utils;
 
 namespace Server.request
 {
@@ -61,14 +62,14 @@ namespace Server.request
                 }
                 else
                 {
-                    myfile = new MyFile(ConfigurationManager.AppSettings.Get("webroot") + request.getPath());
+                    myfile = new MyFile(AppConfigProcessor.Get().WebRoot + request.getPath());
                 }
 
                 //System.Console.WriteLine(myfile.indexPageExists());
 
-				if (ConfigurationManager.AppSettings.Get("dbon") == "true" && ( myfile != null && myfile.indexPageExists() == true))
+				if (AppConfigProcessor.Get().DirectoryBrowsing == true && ( myfile != null && myfile.indexPageExists() == true))
                 {
-                    HtmlPage directoryList = new DirectoryList(ConfigurationManager.AppSettings.Get("webroot"),
+                    HtmlPage directoryList = new DirectoryList(AppConfigProcessor.Get().WebRoot,
                         request.getPath().Substring(0, request.getPath().LastIndexOf('/')));
                     writeString(directoryList.getHtmlPage());
                 }

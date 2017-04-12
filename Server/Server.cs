@@ -1,4 +1,5 @@
 ﻿using Server.request;
+using Server.utils;
 using System;
 using System.Configuration;
 using System.IO;
@@ -14,7 +15,7 @@ namespace Server
         //comment
         public Server()
         {
-            Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("webport"));
+            Int32 port = AppConfigProcessor.Get().WebPort;
             IPAddress localAddr = IPAddress.Parse(ConfigurationManager.AppSettings.Get("ipadress"));
             IPEndPoint endPoint = new IPEndPoint(localAddr, port);
             listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
