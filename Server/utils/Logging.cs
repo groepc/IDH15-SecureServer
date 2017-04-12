@@ -10,7 +10,7 @@ namespace Server.utils
         public void LogStart(string remoteIpEndPoint)
         {
             string logsDirectory = ConfigurationManager.AppSettings.Get("log");
-           
+
             // This text is added only once to the file.
             if (!File.Exists(logsDirectory))
             {
@@ -22,7 +22,7 @@ namespace Server.utils
                 string datumTijd = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 string clientIp = remoteIpEndPoint;
                 sw.WriteLine(@"/################# Start Logging ####################\");
-                sw.WriteLine(@"Date and Time: "+ datumTijd);
+                sw.WriteLine(@"Date and Time: " + datumTijd);
                 sw.WriteLine(@"Client IP-Adress: " + clientIp);
             }
         }

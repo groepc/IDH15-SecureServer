@@ -1,22 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.utils
 {
     public class MyFile
     {
-
         string fullPath;
         string[] pathParts;
         string name;
         string ext;
         FileStream inStream;
-		Boolean indexPage = false;
-     
+        Boolean indexPage = false;
+
         /**
          * Get the input stream
          * @return
@@ -38,12 +33,11 @@ namespace Server.utils
          */
         public MyFile(string path)
         {
-
             fullPath = path;
             if (fullPath.EndsWith("/"))
             {
                 fullPath += "index.html";
-				this.checkIfIndexPageExists(fullPath);
+                this.checkIfIndexPageExists(fullPath);
             }
 
             pathParts = fullPath.Split('/');
@@ -57,20 +51,20 @@ namespace Server.utils
             }
         }
 
-		protected void checkIfIndexPageExists(String fullPath)
-		{
-			System.Console.WriteLine(fullPath);
-			if (!File.Exists(fullPath))
-			{
-				indexPage = true;
+        protected void checkIfIndexPageExists(String fullPath)
+        {
+            Console.WriteLine(fullPath);
+            if (!File.Exists(fullPath))
+            {
+                indexPage = true;
 
-			}
-		}
+            }
+        }
 
-		public Boolean indexPageExists()
-		{
-			return indexPage;
-		}
+        public Boolean indexPageExists()
+        {
+            return indexPage;
+        }
 
         public override string ToString()
         {
@@ -149,17 +143,17 @@ namespace Server.utils
         {
             GetFileInputStream();
             // FileAccess.
-            
+
             return inStream.Length;
             //  inStream.GetChannel().size();
         }
 
-		public void Close()
-		{
-			if (inStream != null)
-			{
-				inStream.Close();
-			}
-		}
+        public void Close()
+        {
+            if (inStream != null)
+            {
+                inStream.Close();
+            }
+        }
     }
 }

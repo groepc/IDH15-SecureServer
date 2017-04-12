@@ -1,12 +1,7 @@
 ﻿using Server.entities;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.utils
 {
@@ -22,24 +17,19 @@ namespace Server.utils
         public User GetByName(string username)
         {
             User user = null;
-
             string constr = ConfigurationManager.ConnectionStrings["logindb"].ConnectionString;
-
             using (SqlConnection con = new SqlConnection(constr))
             {
                 con.Open();
-
-                using(SqlTransaction conTrans = con.BeginTransaction())
+                using (SqlTransaction conTrans = con.BeginTransaction())
                 {
                     try
                     {
                         using (SqlCommand cmd = new SqlCommand("SELECT Id, Name, PasswordHash, PasswordSalt, Role FROM [users] WHERE Name = @Username"))
                         {
                             cmd.Transaction = conTrans;
-
                             cmd.Parameters.Add("username", SqlDbType.VarChar).Value = username;
                             cmd.ExecuteNonQuery();
-
                         }
                         conTrans.Commit();
                     }
@@ -50,7 +40,6 @@ namespace Server.utils
                 }
                 con.Close();
             }
-
             return user;
         }
 

@@ -1,5 +1,4 @@
-﻿using Server.entities;
-using System;
+﻿using System;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -13,7 +12,7 @@ namespace Server.utils
         private readonly UserHelper _userHelper;
 
         public Authentication(UserHelper userHelper)
-        {            
+        {
             hashEncoding = Encoding.UTF8;
             hashAlgorithm = HashAlgorithm.Create("SHA-512");
             _userHelper = userHelper;

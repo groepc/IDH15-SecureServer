@@ -1,13 +1,7 @@
-﻿using System.IO;
-using System.Net.Sockets;
-using System.Text;
+﻿using System.Net.Sockets;
 using Server.utils;
 using System.Collections.Specialized;
-using System;
 using System.Collections.Generic;
-using System.Web;
-using System.Linq;
-using Server.request;
 
 namespace Server.request
 {

@@ -11,48 +11,36 @@ namespace Server
     public class Server
     {
         private Socket listenSocket;
-
         //comment
         public Server()
         {
-
-
             Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("webport"));
             IPAddress localAddr = IPAddress.Parse(ConfigurationManager.AppSettings.Get("ipadress"));
-
             IPEndPoint endPoint = new IPEndPoint(localAddr, port);
             listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             listenSocket.Bind(endPoint);
-
             Thread listenerThread = new Thread(Start);
             listenerThread.Start();
-
         }
 
         public void Start()
         {
-
             listenSocket.Listen(int.MaxValue);
-
             try
             {
                 Socket communicationSocket;
-
                 while (true)
                 {
                     // De blocking call is de accept-methode: Een request
                     // vanuit een browser resulteert hier in een communicatiesocket
                     communicationSocket = listenSocket.Accept();
-
                     // When a new client is connected, handle the request on a new thread
                     Thread requestThread = new Thread(OnRequest)
                     {
                         Name = Guid.NewGuid().ToString()
                     };
-
                     requestThread.Start(communicationSocket);
                 }
-
                 communicationSocket.Close();
             }
             catch (IOException e)
@@ -66,7 +54,7 @@ namespace Server
         {
             try
             {
-                using (Socket clientSocket = (Socket) clientSocketObj)
+                using (Socket clientSocket = (Socket)clientSocketObj)
                 {
                     IPEndPoint endPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
 
@@ -84,7 +72,6 @@ namespace Server
             {
                 Console.WriteLine(e);
             }
-
         }
     }
 }
