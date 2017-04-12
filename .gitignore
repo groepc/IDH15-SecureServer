@@ -48,3 +48,4 @@ Temporary Items
 Server/App.config
 .idea
 /Server/setup-log/log.txt
+Server/bin/Debug/Newtonsoft.Json.dll

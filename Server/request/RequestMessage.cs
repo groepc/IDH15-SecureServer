@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Web;
-using Server.entities;
+using Server.Entities;
 using Server.extensions;
 
 namespace Server.request

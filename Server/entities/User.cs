@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Server.entities
+﻿namespace Server.Entities
 {
     public class User
     {

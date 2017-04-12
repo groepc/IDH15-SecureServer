@@ -1,9 +1,9 @@
-﻿using Server.entities;
+﻿using Server.Entities;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Server.utils
+namespace Server.Entities
 {
     public class UserHelper
     {

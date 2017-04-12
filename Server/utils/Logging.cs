@@ -3,7 +3,7 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 
-namespace Server.utils
+namespace Server.Entities
 {
     public class Logging
     {
