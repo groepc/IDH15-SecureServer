@@ -11,45 +11,30 @@ using Server.extensions;
 
 namespace Server.request
 {
-	/// <summary>
-	/// A class representing the request that came from a client.
-	/// </summary>
+	// A class representing the request that came from a client.
 	public class RequestMessage
 	{
-		#region Read-only properties
-
-		/// <summary>
-		/// Gets the HTTP method used for the request (GET, POST, etc.)
-		/// </summary>
+		// Gets the HTTP method used for the request (GET, POST, etc.)
 		public string HttpMethod { get; }
-		/// <summary>
-		/// Gets the request path.
-		/// </summary>
+
+		// Gets the request path.
 		public string Path { get; }
-		/// <summary>
-		/// Gets any query string parameters that were present.
-		/// </summary>
+
+		// Gets any query string parameters that were present.
 		public NameValueCollection QueryString { get; }
-		/// <summary>
-		/// Gets the HTTP version of the request.
-		/// </summary>
+    
+		// Gets the HTTP version of the request.
 		public string HttpVersion { get; }
-		/// <summary>
-		/// Gets a collection of the headers that were sent with the request.
-		/// </summary>
+
+		// Gets a collection of the headers that were sent with the request.
 		public NameValueCollection Headers { get; }
-		/// <summary>
-		/// Gets a collection of data that was sent by an HTML form, if present.
-		/// </summary>
+
+		// Gets a collection of data that was sent by an HTML form, if present.
 		public NameValueCollection FormData { get; }
 
 		public String RawHeader { get; }
 
-		#endregion
-
-		/// <summary>
-		/// Gets or sets the user that was authenticated and made this request.
-		/// </summary>
+		// Gets or sets the user that was authenticated and made this request.
 		public User User { get; set; }
 
 		// The constructor is private to force using the Create method for creating a new instance
@@ -66,7 +51,6 @@ namespace Server.request
 
 		public static RequestMessage Create(Stream inputStream)
 		{
-
 			string rawHeader = "";
 			NameValueCollection headers = new NameValueCollection();
 			NameValueCollection queryString = null;
@@ -92,11 +76,7 @@ namespace Server.request
 
 					string[] requestLineParts = header.Split(new[] { ' ' }, 3);
 
-					//                    if (requestLineParts.Length != 3)
-					//                        throw new RequestException(HttpStatusCode.BadRequest, "Request-Line malformed.");
-
 					// Parse all parts of the Request-Line
-
 					httpMethod = requestLineParts[0].ToUpperInvariant();
 					httpVersion = requestLineParts[2].ToUpperInvariant();
 
@@ -107,13 +87,11 @@ namespace Server.request
 						queryString = HttpUtility.ParseQueryString(requestUriParts[1]);
 
 					// Request-Line has been read, so that means the next lines are headers
-
 					readRequestLine = true;
 					continue;
 				}
 
 				// Parse the header
-
 				string[] headerParts = header.Split(new[] { ':' }, 2);
 
 				string headerName = headerParts[0].Trim();
@@ -126,9 +104,6 @@ namespace Server.request
 				return null;
 
 			// Read body if the Content-Length header is present to determine if the request contains a body
-
-			// TODO: what if there is a body but no Content-Length header?
-
 			string contentLengthString = headers["Content-Length"];
 
 			if (!string.IsNullOrEmpty(contentLengthString))
@@ -138,7 +113,6 @@ namespace Server.request
 					throw new Exception("Invalid Content-Length header value.");
 
 				// Always read the body content, if present
-
 				using (Stream content = new MemoryStream())
 				{
 					inputStream.CopyTo(content, 0, contentLength);
@@ -159,16 +133,12 @@ namespace Server.request
 			);
 		}
 
-		/// <summary>
 		/// Enumerates through all the headers (including the Request-Line).
-		/// </summary>
 		private static IEnumerable<string> ReadHeaders(Stream inputStream)
 		{
 			// ASCII uses 1 byte per character
-
 			// We read one character at a time
 			// We don't use a StreamReader since it buffers more characters than we want, which may cause blocking
-
 			using (BinaryReader reader = new BinaryReader(inputStream, Encoding.ASCII, true))
 			{
 				StringBuilder builder = new StringBuilder();
@@ -205,9 +175,7 @@ namespace Server.request
 			}
 		}
 
-		/// <summary>
-		/// Checks if the request has a body containg form data, parses and places it into a new form data collection.
-		/// </summary>
+		// Checks if the request has a body containg form data, parses and places it into a new form data collection.
 		private static NameValueCollection ParseFormData(NameValueCollection headers, Stream content)
 		{
 			string contentType = headers["Content-Type"];
@@ -219,7 +187,6 @@ namespace Server.request
 				if (string.Equals(contentTypeParts[0], "application/x-www-form-urlencoded", StringComparison.InvariantCultureIgnoreCase)) // TODO: multipart/form-data support?
 				{
 					// Parse charset if present or use default (the charset determines the encoding of the form data)
-
 					string charsetPart = contentTypeParts.FirstOrDefault(ctp => ctp.StartsWith("charset", StringComparison.InvariantCultureIgnoreCase));
 					string charset = charsetPart != null && charsetPart.Contains('=')
 					    ? charsetPart.Split(new[] { '=' }, 2).Last()
@@ -241,13 +208,10 @@ namespace Server.request
 						return HttpUtility.ParseQueryString(formDataString);
 				}
 			}
-
 			return null;
 		}
 
-		/// <summary>
-		/// Creates a string representation of the Request-Line and includes the headers as well if that was specified. Does not output the body.
-		/// </summary>
+		// Creates a string representation of the Request-Line and includes the headers as well if that was specified. Does not output the body.
 		public string ToString(bool includeHeaders)
 		{
 			StringBuilder builder = new StringBuilder();
@@ -257,7 +221,6 @@ namespace Server.request
 			if (QueryString.Count > 0)
 			{
 				// Build and append the query string if any query parameters are present
-
 				builder.Append('?');
 
 				int fieldCount = 0;
@@ -297,9 +260,7 @@ namespace Server.request
 			return builder.ToString();
 		}
 
-		/// <summary>
-		/// Creates a string representation of the Request-Line and includes the headers as well. Does not output the body.
-		/// </summary>
+		// Creates a string representation of the Request-Line and includes the headers as well. Does not output the body.
 		public override string ToString()
 		{
 			return ToString(true);
