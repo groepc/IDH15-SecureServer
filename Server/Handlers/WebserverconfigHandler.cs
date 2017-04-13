@@ -18,7 +18,6 @@ namespace Server.Handlers
 
         public void HandlePost(Request request, string requestedFile)
         {
-            AppConfigProcessor.Get().WebPort = int.Parse(request.formData["webport"]);
             AppConfigProcessor.Get().WebRoot = request.formData["webroot"];
             AppConfigProcessor.Get().DefaultPages = request.formData["defaultpage"];
             AppConfigProcessor.Get().DirectoryBrowsing = Convert.ToBoolean(request.formData["directoryBrowsing"]);

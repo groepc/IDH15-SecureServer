@@ -86,20 +86,24 @@ namespace Server.request
             }
             catch (RedirectException e)
             {
+                Console.WriteLine(e);
                 writeRedirectString(e.getPath(), 302);
             }
             catch (BadRequestException e)
             {
+                Console.WriteLine(e);
                 myfile = new MyFile((new Error(400)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
                 writeFile(myfile, 400);
             }
             catch (FileNotFoundException e)
             {
+                Console.WriteLine(e);
                 myfile = new MyFile((new Error(404)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
                 writeFile(myfile, 404);
             }
             catch (IOException e)
             {
+                Console.WriteLine(e);
                 myfile = new MyFile((new Error(500)).getHtmlPath(ConfigurationManager.AppSettings.Get("configpath")));
                 writeFile(myfile, 500);
             }
