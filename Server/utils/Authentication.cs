@@ -31,7 +31,7 @@ namespace Server.Entities
         public bool AuthenticateUser(string username, string password)
         {
 
-            // @TODO: Authenticatie controleren
+			// @TODO: Authenticatie controleren
 
             User user = _userHelper.GetByName(username);
 
@@ -49,7 +49,7 @@ namespace Server.Entities
                 }
             }
 
-            return true;
+			return false;
         }
 
         // Creates a base64 password hash

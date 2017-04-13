@@ -20,36 +20,38 @@ namespace Server.Entities
 			using (MySqlConnection con = new MySqlConnection(constr))
 			{
 				con.Open();
-				using (MySqlTransaction conTrans = con.BeginTransaction())
+
+				try
 				{
-					try
+					MySqlCommand cmd = new MySqlCommand("SELECT id, username, password, passwordsalt, userrole FROM users WHERE username = ?username", con);
+					cmd.Parameters.Add(new MySqlParameter("username", username));
+
+					MySqlDataReader reader = cmd.ExecuteReader();
+					if (reader.HasRows == true)
 					{
-						using (MySqlCommand cmd = new MySqlCommand("SELECT id, username, password, passwordsalt, userrole FROM users WHERE username = @Username", con))
-						{
-							cmd.Transaction = conTrans;
-							cmd.Parameters.Add("username", MySqlDbType.VarChar).Value = username;
-							cmd.ExecuteNonQuery();
-						}
-						conTrans.Commit();
+						user = new User();
+						PopulateUser(reader, user);
 					}
-					catch (MySqlException)
-					{
-						throw;
-					}
+
 				}
+				catch (MySqlException)
+				{
+					throw;
+				}
+
 				con.Close();
 			}
 			return user;
 		}
 
 		// Reads the data into an existing user object.
-		private void PopulateUser(IDataReader reader, User user)
+		private void PopulateUser(MySqlDataReader reader, User user)
 		{
-			user.Id = (int)reader["id"];
-			user.Name = (string)reader["username"];
-			user.Passwordhash = (string)reader["password"];
-			user.Passwordsalt = (string)reader["passwordsalt"];
-			user.Role = (string)reader["userole"];
+			//user.Id = int.Parse(reader.GetString("id"));
+			user.Name = (string)reader.GetString("username");
+			user.Passwordhash = (string)reader.GetString("password");
+			user.Passwordsalt = (string)reader.GetString("passwordsalt");
+			user.Role = (string)reader.GetString("userole");
 		}
 	}
 }
