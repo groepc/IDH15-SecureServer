@@ -17,7 +17,7 @@ namespace Server.response.admin
             content += "        <table>";
             content += "            <tr>";
             content += "                <td>Webport:</td>";
-            content += "                <td><INPUT TYPE=\"TEXT\" NAME=\"webport\" VALUE=\"" + AppConfigProcessor.Get().WebPort + "\" SIZE=\"25\" MAXLENGTH=\"150\"></td>";
+            content += "                <td><INPUT TYPE=\"TEXT\" NAME=\"webport\" VALUE=\"" + AppConfigProcessor.Get().WebPort + "\" SIZE=\"25\" MAXLENGTH=\"150\" disabled></td>";
             content += "            </tr>";
             content += "            <tr>";
             content += "                <td>Webroot:</td>";

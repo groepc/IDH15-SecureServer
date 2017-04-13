@@ -53,7 +53,7 @@ namespace Server.Entities
 				indexPage = false;
 			}
 
-				pathParts = fullPath.Split('/');
+			pathParts = fullPath.Split('/');
 			if (pathParts.Length > 0)
 			{
 				name = pathParts[pathParts.Length - 1];
