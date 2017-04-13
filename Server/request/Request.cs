@@ -2,6 +2,7 @@
 using Server.Entities;
 using System.Collections.Specialized;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Server.request
 {
@@ -23,7 +24,11 @@ namespace Server.request
 
             this.command = this.requestMessage.HttpMethod;
             this.path = "/" + this.requestMessage.Path;
-            this.protocol = this.requestMessage.HttpVersion;
+			if (!Path.HasExtension(this.path)) {
+				this.path = this.path + "/";
+			}
+
+	    this.protocol = this.requestMessage.HttpVersion;
 
 			if (!command.Equals("GET") && !command.Equals("POST"))
             {
