@@ -24,11 +24,12 @@ namespace Server.Entities
 				try
 				{
 					MySqlCommand cmd = new MySqlCommand("SELECT id, username, password, passwordsalt, userrole FROM users WHERE username = ?username", con);
-					cmd.Parameters.Add(new MySqlParameter("username", username));
+					cmd.Parameters.Add(new MySqlParameter("?username", username));
 
 					MySqlDataReader reader = cmd.ExecuteReader();
 					if (reader.HasRows == true)
 					{
+						reader.Read();
 						user = new User();
 						PopulateUser(reader, user);
 					}
@@ -51,7 +52,7 @@ namespace Server.Entities
 			user.Name = (string)reader.GetString("username");
 			user.Passwordhash = (string)reader.GetString("password");
 			user.Passwordsalt = (string)reader.GetString("passwordsalt");
-			user.Role = (string)reader.GetString("userole");
+			user.Role = (string)reader.GetString("userrole");
 		}
 	}
 }

@@ -38,12 +38,10 @@ namespace Server.Entities
             if (user != null)
             {
                 string hash = CreatePasswordhash(username, password, user.Passwordsalt);
-
+				Console.WriteLine(hash);
+				Console.WriteLine(user.Passwordhash);
                 if (hash == user.Passwordhash)
                 {
-                    //string sessionToken = Guid.NewGuid().ToString("N");
-                    //_sessionCache.Set($"SessionUser_{sessionToken}", user, new CacheItemPolicy { SlidingExpiration = TimeSpan.FromMinutes(20D) });
-                    //response.Headers["Set-Cookie"] = $"sessionToken={sessionToken}";
 
                     return true;
                 }
