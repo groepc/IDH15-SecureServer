@@ -42,7 +42,7 @@ namespace Server.Entities
 				Boolean result = false;
 				foreach (string i in defaultPages)
 				{
-					fullPath = orginalPath + "/" + i;
+					fullPath = orginalPath + i;
 					result = this.checkIfIndexPageExists(fullPath);
 					if (result == true)
 					{
