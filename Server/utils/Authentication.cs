@@ -33,21 +33,21 @@ namespace Server.Entities
 
             // @TODO: Authenticatie controleren
 
-            //User user = _userHelper.GetByName(username);
+            User user = _userHelper.GetByName(username);
 
-            //if (user != null)
-            //{
-            //    string hash = CreatePasswordhash(username, password, user.Passwordsalt);
+            if (user != null)
+            {
+                string hash = CreatePasswordhash(username, password, user.Passwordsalt);
 
-            //    if (hash == user.Passwordhash)
-            //    {
-            //        //string sessionToken = Guid.NewGuid().ToString("N");
-            //        //_sessionCache.Set($"SessionUser_{sessionToken}", user, new CacheItemPolicy { SlidingExpiration = TimeSpan.FromMinutes(20D) });
-            //        //response.Headers["Set-Cookie"] = $"sessionToken={sessionToken}";
+                if (hash == user.Passwordhash)
+                {
+                    //string sessionToken = Guid.NewGuid().ToString("N");
+                    //_sessionCache.Set($"SessionUser_{sessionToken}", user, new CacheItemPolicy { SlidingExpiration = TimeSpan.FromMinutes(20D) });
+                    //response.Headers["Set-Cookie"] = $"sessionToken={sessionToken}";
 
-            //        return true;
-            //    }
-            //}
+                    return true;
+                }
+            }
 
             return true;
         }

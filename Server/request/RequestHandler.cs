@@ -67,7 +67,7 @@ namespace Server.request
 
                 //System.Console.WriteLine(myfile.indexPageExists());
 
-.				if (AppConfigProcessor.Get().DirectoryBrowsing == true && (myfile != null && myfile.indexPageExists() == true))
+				if (AppConfigProcessor.Get().DirectoryBrowsing == true && (myfile != null && myfile.indexPageExists() == true))
                 {
                     HtmlPage directoryList = new DirectoryList(AppConfigProcessor.Get().WebRoot,
                         request.getPath().Substring(0, request.getPath().LastIndexOf('/')));

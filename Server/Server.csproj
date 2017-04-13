@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Configuration" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entities\AppConfig.cs" />
