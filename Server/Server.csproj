@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -48,9 +52,11 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entities\AppConfig.cs" />
     <Compile Include="entities\User.cs" />
     <Compile Include="extensions\StreamExtensions.cs" />
     <Compile Include="handlers\LoginHandler.cs" />
+    <Compile Include="handlers\LogPageHandler.cs" />
     <Compile Include="handlers\WebserverconfigHandler.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -64,8 +70,12 @@
     <Compile Include="request\Request.cs" />
     <Compile Include="request\RequestHandler.cs" />
     <Compile Include="request\RequestMessage.cs" />
+    <Compile Include="response\admin\IndexPage.cs" />
+    <Compile Include="response\admin\LogPage.cs" />
+    <Compile Include="response\admin\WebserverConfigPage.cs" />
     <Compile Include="response\ResponseCodes.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="utils\AppConfigProcessor.cs" />
     <Compile Include="utils\Authentication.cs" />
     <Compile Include="utils\Logging.cs" />
     <Compile Include="utils\MyFile.cs" />
@@ -83,6 +93,8 @@
     <None Include="bin\Debug\setup-log" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Server.csprojResolveAssemblyReference.cache" />
+    <None Include="packages.config" />
+    <None Include="setup-log\configuration.json" />
     <None Include="view\admin\index.html" />
     <None Include="Web.config">
       <SubType>Designer</SubType>

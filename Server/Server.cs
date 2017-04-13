@@ -12,7 +12,7 @@ namespace Server
     public class Server
     {
         private Socket listenSocket;
-        //comment
+
         public Server()
         {
             Int32 port = AppConfigProcessor.Get().WebPort;
@@ -46,7 +46,6 @@ namespace Server
             }
             catch (IOException e)
             {
-                // TO DO: iets moois
                 Console.WriteLine(e.ToString());
             }
         }
